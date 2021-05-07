@@ -1,10 +1,14 @@
 import React from 'react'
+import Empresas from './empresas/Empresas'
+import Skills from './skills/Skills'
 
 function Experiencia() {
     return (
-        <div>
+        <section>
             <h2>Experiência</h2>
-        </div>
+            <Empresas />
+            <Skills />
+        </section>
     )
 }
 

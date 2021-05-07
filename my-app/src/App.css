@@ -1,38 +1,331 @@
-.App {
+@font-face {
+  font-family: "Nebula Regular";
+  src: url("./fonts/nebula.regular.otf");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0%;
+}
+
+body {
+  background: #2b2b2b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  height: 40rem;
+  padding: 4rem 3% 4rem 15%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  color: white;
+  width: 60ch;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Nebula Regular";
+}
+
+h2,
+h3,
+h4 {
+  color: white;
+  text-shadow: 0 0 6px rgba(194, 203, 255, 0.92), 0 0 30px rgba(6, 32, 177, 0.34), 0 0 12px rgba(133, 152, 255, 0.52), 0 0 21px rgba(36, 69, 255, 0.92), 0 0 34px rgba(6, 32, 177, 0.78), 0 0 54px rgba(6, 32, 177, 0.92);
+}
+
+h1 {
+  font-size: 2rem;
+  width: 28ch;
+}
+
+h2,
+h3 {
+  font-size: 2.8rem;
+}
+
+.btn {
+  background: transparent;
+  padding: 0.7em;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  margin: 1rem 0;
+}
+
+.fixed {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000f74), to(#2b2b2b));
+  background: linear-gradient(#000f74, #2b2b2b);
+}
+
+.fixed__left--jclogo {
+  position: fixed;
+  width: 40px;
+  top: 1rem;
+  left: 1rem;
+}
+
+.fixed__left--jclogo > * {
+  width: 8rem;
+}
+
+.fixed__left--social {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  bottom: 15%;
+  left: 5%;
+}
+
+.fixed__left--social > * {
+  width: 40px;
+}
+
+.fixed__right {
+  position: inherit;
+  right: 0;
+  bottom: 50%;
+  top: 50%;
+}
+
+.fold {
+  padding-top: 0;
+  position: relative;
+}
+
+.fold__center {
+  color: #7284ff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.fold__center--name {
+  color: white;
+  cursor: pointer;
+}
+
+.fold__navbar {
+  padding: 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fold__navbar > button {
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sobre {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
+.sobre > h2 {
+  margin-top: -5rem;
+}
+
+.sobre > img {
+  width: 25rem;
+}
+
+.oQueFaco {
+  text-align: start;
+}
+
+.oQueFaco__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.oQueFaco__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.oQueFaco__item--img {
+  width: 12rem;
+}
+
+.oQueFaco__item--text > h3 {
+  font-size: 1.4rem;
+}
+
+.projetos {
+  height: 100%;
+}
+
+.projetos__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.projetos__item {
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.projetos__item > img {
+  aspect-ratio: 3 / 2;
+  width: 40%;
+}
+
+.projetos__item--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX(-6rem);
+          transform: translateX(-6rem);
+  gap: 10px;
+  background-color: #000f74;
+  -webkit-box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.36);
+          box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.36);
+  border-top-left-radius: 25px;
+  padding: 2rem;
+  width: 70%;
+}
+
+.projetos__item--icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+
+.projetos__item--icons img {
+  width: 1.5rem;
+}
+
+.contato {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000f74));
+  background: linear-gradient(rgba(0, 0, 0, 0), #000f74);
+}
+
+.contatos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.contatos > * {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.contatos__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contatos__form > label {
+  text-align: start;
+  margin: 0.5rem 4px;
+  color: white;
+}
+
+.contatos__form > textarea {
+  resize: none;
+}
+
+.contatos__curriculo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contatos__curriculo > img {
+  width: 15rem;
+}
+
+.contatos__curriculo > button {
+  width: 10rem;
+}
+/*# sourceMappingURL=App.css.map */

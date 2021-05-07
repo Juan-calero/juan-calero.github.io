@@ -2,13 +2,15 @@ import React from 'react';
 import Curriculo from './curriculo/Curriculo';
 import Form from './form/Form';
 
-function Contact(){
+function Contact() {
     return (
-        <div>
+        <section className="contato">
             <h2>Contactos</h2>
-            <Form />
-            <Curriculo />
-        </div>
+            <div className="contatos">
+                <Form />
+                <Curriculo />
+            </div>
+        </section>
     )
 }
 

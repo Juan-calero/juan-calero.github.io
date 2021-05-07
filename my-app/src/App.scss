@@ -1,0 +1,234 @@
+@import "./_variables.scss";
+@font-face {
+    font-family: "Nebula Regular";
+    src: url("./fonts/nebula.regular.otf");
+}
+*,
+*::after,
+*::before {
+    margin: 0%;
+}
+
+body {
+    background: #2b2b2b;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section {
+    height: 40rem;
+    padding: 4rem 3% 4rem 15%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+p {
+    color: white;
+    width: 60ch;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Nebula Regular";
+}
+
+h2,
+h3,
+h4{
+    color: white;
+    text-shadow: $neon;
+}
+
+h1 {
+    font-size: 2rem;
+    width: 28ch;
+}
+
+h2,
+h3 {
+    font-size: 2.8rem;
+}
+
+.btn {
+    background: transparent;
+    padding: 0.7em;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    margin: 1rem 0;
+}
+
+.fixed {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient($darkBlue, $black);
+    &__left {
+        &--jclogo {
+            position: fixed;
+            width: 40px;
+            top: 1rem;
+            left: 1rem;
+            > * {
+                width: 8rem;
+            }
+        }
+        &--social {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            bottom: 15%;
+            left: 5%;
+            & > * {
+                width: 40px;
+            }
+        }
+    }
+    &__right {
+        position: inherit;
+        right: 0;
+        bottom: 50%;
+        top: 50%;
+    }
+}
+
+.fold {
+    padding-top: 0;
+    position: relative;
+    &__center {
+        color: $lightBlue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &--name {
+            color: white;
+            cursor: pointer;
+        }
+    }
+    &__navbar {
+        padding: 2rem 4rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        & > button {
+            margin: 0px;
+        }
+    }
+}
+
+.sobre {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > h2 {
+        margin-top: -5rem;
+    }
+    & > img {
+        width: 25rem;
+    }
+}
+
+.oQueFaco {
+    text-align: start;
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--img {
+            width: 12rem;
+        }
+        &--text {
+            & > h3 {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+.projetos {
+    height: 100%;
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__item {
+        text-align: start;
+        display: flex;
+        gap: 1rem;
+        & > img {
+            aspect-ratio: 3 / 2;
+            width: 40%;
+        }
+        &--content {
+            display: flex;
+            transform: translateX(-6rem);
+            gap: 10px;
+            background-color: $darkBlue;
+            box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.36);
+            border-top-left-radius: 25px;
+            padding: 2rem;
+            width: 70%;
+        }
+        &--icons {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            & img {
+                width: 1.5rem;
+            }
+        }
+    }
+}
+
+.contato {
+    background: linear-gradient(rgba(0, 0, 0, 0), $darkBlue);
+}
+.contatos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    & > * {
+        flex-basis: 100%;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        & > label {
+            text-align: start;
+            margin: 0.5rem 4px;
+            color: white;
+        }
+        & > textarea {
+            resize: none;
+        }
+    }
+    &__curriculo {
+        & > img {
+            width: 15rem;
+        }
+        & > button {
+            width: 10rem;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

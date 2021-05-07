@@ -1,7 +1,7 @@
-import React from 'react'
+/*import React from 'react'
 
 function _OQueFaco() {
-    return new ProcessoItem = [
+    return ProcessoItem = [
         {
             id: 1,
             img: "PUT IMAGE URL HERE",
@@ -23,4 +23,4 @@ function _OQueFaco() {
     ]
 }
 
-export default _OQueFaco
+export default _OQueFaco*/

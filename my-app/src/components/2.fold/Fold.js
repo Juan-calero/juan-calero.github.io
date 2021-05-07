@@ -5,10 +5,10 @@ import NavBar from './navBar/NavBar';
 
 function Fold(){
     return (
-        <div>
+        <section className="fold">
             <NavBar />
             <Center />
-        </div>
+        </section>
     )
 }
 

@@ -1,10 +1,12 @@
 import React from 'react'
+import OQueFacoItems from './items/OQueFacoItems'
 
 function OQueFaco() {
     return (
-        <div>
+        <section className="oQueFaco">
             <h2>O Que Faço</h2>
-        </div>
+            <OQueFacoItems />
+        </section>
     )
 }
 
