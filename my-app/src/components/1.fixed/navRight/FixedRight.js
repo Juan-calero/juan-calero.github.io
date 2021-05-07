@@ -2,14 +2,14 @@ import React from 'react'
 
 function FixedRight() {
     return (
-        <ul className="fixed__right">
-           <li><a href=""></a></li>
-           <li><a href=""></a></li>
-           <li><a href=""></a></li>
-           <li><a href=""></a></li>
-           <li><a href=""></a></li>
-           <li><a href=""></a></li> 
-        </ul>
+        <aside className="fixed__right">
+           <div className="fixed__right--dot active"></div>
+           <div className="fixed__right--dot"></div>
+           <div className="fixed__right--dot"></div>
+           <div className="fixed__right--dot"></div>
+           <div className="fixed__right--dot"></div>
+           <div className="fixed__right--dot"></div> 
+        </aside>
     )
 }
 

@@ -4,7 +4,7 @@ function Center() {
     return (
         <div className="fold__center">
             <h1>Olá, Sou <strong className="fold__center--name">Juan Calero</strong>,<br /> Front-end web developer.</h1>
-                <button className="btn"> Saber Mais {'>'} </button>
+                <button className="fold__btn"> Saber Mais {'>'} </button>
         </div>
     )
 }

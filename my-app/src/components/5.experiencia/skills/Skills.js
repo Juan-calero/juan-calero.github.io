@@ -10,15 +10,17 @@ import ReactIcon from '../../../icons/react_logo.png'
 function Skills() {
     return (
         <div className="skills">
-            <h4>Skills</h4>
-            <Navbar />
-            <Ferramentas
-            icon1={HtmlIcon}
-            icon2={CssIcon}
-            icon3={JsIcon}
-            icon4={SassIcon}
-            icon5={ReactIcon}
-            />
+            <h3>skills</h3>
+            <div className="skills__content">
+                <Navbar />
+                <Ferramentas
+                    icon1={HtmlIcon}
+                    icon2={CssIcon}
+                    icon3={JsIcon}
+                    icon4={SassIcon}
+                    icon5={ReactIcon}
+                />
+            </div>
         </div>
     )
 }

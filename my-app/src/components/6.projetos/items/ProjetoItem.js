@@ -1,5 +1,8 @@
 import React from 'react'
 import _OQueFaco from '../../utils/_OQueFaco'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
+import { faPaintBrush, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
 function ProjetoItem(props) {
     return (
@@ -8,12 +11,12 @@ function ProjetoItem(props) {
             <div className="projetos__item--text">
                 <h3>{props.title}</h3>
                 <div className="projetos__item--content">
-                    <div className="projetos__item--icons">
-                        <a href=''><img src={props.github} alt="" srcset="" /></a>
-                        <a href=''><img src={props.mockup} alt="" srcset="" /></a>
-                        <a href=''><img src={props.site} alt="" srcset="" /></a>
-                    </div>
                     <p>{props.content}</p>
+                    <div className="projetos__item--icons">
+                        <a href=''><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                        <a href=''><FontAwesomeIcon icon={faGithubAlt} size="lg" /></a>
+                        <a href=''><FontAwesomeIcon icon={faPaintBrush} size="lg"/></a>
+                    </div>
                 </div>
                 <h4>{props.tech}</h4>
             </div>

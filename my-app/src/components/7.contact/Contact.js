@@ -5,9 +5,11 @@ import Form from './form/Form';
 function Contact() {
     return (
         <section className="contato">
-            <h2>Contactos</h2>
-            <div className="contatos">
-                <Form />
+            <div className="contatoto">
+                <div className="contatos">
+                    <h2>Contactos</h2>
+                    <Form />
+                </div>
                 <Curriculo />
             </div>
         </section>
