@@ -1,7 +1,10 @@
 import React from 'react';
+import BigGear from '../../../img/black-big-gear-png-transparent.png'
 
-export default function OQueFacoBG() {
+function OQueFacoBG() {
     return (
-        <img src="" alt=""/>
+        <img className="oQueFaco__bg" src={BigGear} alt=""/>
     )
 };
+
+export default OQueFacoBG

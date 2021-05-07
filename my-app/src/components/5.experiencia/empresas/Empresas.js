@@ -4,9 +4,9 @@ import MusicaEmSi from '../../../icons/Musica em sí logo faces.png'
 
 function Empresas() {
     return (
-        <div>
+        <div className="empresas">
             <h4>Empresas</h4>
-            <div>
+            <div className="empresas__logo">
                 <img src={Washome} alt="" />
                 <img src={MusicaEmSi} alt="" />
             </div>

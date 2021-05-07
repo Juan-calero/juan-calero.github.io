@@ -7,12 +7,14 @@
 *::after,
 *::before {
     margin: 0%;
+    z-index: 999;
 }
 
 body {
     background: #2b2b2b;
     box-sizing: border-box;
     text-align: center;
+    overflow-x: hidden;
 }
 
 section {
@@ -25,10 +27,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-p {
-    color: white;
-    width: 60ch;
-}
 
 h1,
 h2,
@@ -39,9 +37,14 @@ h4 {
 
 h2,
 h3,
-h4{
+h4 {
     color: white;
     text-shadow: $neon;
+}
+
+h2,
+h3 {
+    font-size: 2.8rem;
 }
 
 h1 {
@@ -49,9 +52,18 @@ h1 {
     width: 28ch;
 }
 
-h2,
-h3 {
-    font-size: 2.8rem;
+h2 {
+    margin: 2rem 0;
+}
+
+p {
+    color: white;
+    width: 60ch;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .btn {
@@ -64,38 +76,68 @@ h3 {
 }
 
 .fixed {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background: linear-gradient($darkBlue, $black);
-    &__left {
-        &--jclogo {
-            position: fixed;
-            width: 40px;
-            top: 1rem;
-            left: 1rem;
-            > * {
-                width: 8rem;
-            }
-        }
-        &--social {
-            position: fixed;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            bottom: 15%;
-            left: 5%;
-            & > * {
-                width: 40px;
-            }
-        }
+    &__bg {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient($darkBlue, $black);
+        z-index: -1;
+    }
+    &__social{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        bottom: 0%;
+        left: 5%;
+        gap: 2rem;
     }
     &__right {
         position: inherit;
         right: 0;
         bottom: 50%;
         top: 50%;
+    }
+}
+.left {
+    &__jclogo {
+        position: fixed;
+        width: 40px;
+        top: 1rem;
+        left: 1rem;
+        > * {
+            width: 8rem;
+        }
+    }
+    &__social {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        & > * {
+            width: 40px;
+        }
+    }
+    &__lines {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 0.8rem;
+        & > *{
+            width: 4px;
+            border-radius: 25px 25px 0 0;
+        }
+        &--line1 {
+            height: 7rem;
+            width: 4px;
+            background-color: #585858;
+        }
+        &--line2 {
+            height: 10rem;
+            background-color: #9B9B9B;
+        }
+        &--line3 {
+            height: 5rem;
+            background-color: #414141;
+        }
     }
 }
 
@@ -140,7 +182,15 @@ h3 {
 }
 
 .oQueFaco {
+    position: relative;
     text-align: start;
+    &__bg {
+        opacity: 0.4;
+        z-index: 1;
+        position: absolute;
+        right: -50%;
+        top: 0%;
+    }
     &__items {
         display: flex;
         flex-direction: column;
@@ -156,6 +206,47 @@ h3 {
         &--text {
             & > h3 {
                 font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+.experiencia {
+    & h2 {
+        margin-bottom: 3rem;
+    }
+    &__components {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.empresas {
+    flex: 1;
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    & img {
+        padding: 1rem;
+        width: 6rem;
+    }
+}
+.skills {
+    flex: 2;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &__navbar {
+        display: flex;
+        gap: 20px;
+        &--ferramentas {
+            display: flex;
+            justify-content: space-between;
+            & img {
+                object-fit: contain;
+                width: 3rem;
             }
         }
     }

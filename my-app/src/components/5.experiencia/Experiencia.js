@@ -4,10 +4,12 @@ import Skills from './skills/Skills'
 
 function Experiencia() {
     return (
-        <section>
+        <section id="experiencia" className="experiencia">
             <h2>Experiência</h2>
-            <Empresas />
-            <Skills />
+            <div className="experiencia__components">
+                <Empresas />
+                <Skills />
+            </div>
         </section>
     )
 }

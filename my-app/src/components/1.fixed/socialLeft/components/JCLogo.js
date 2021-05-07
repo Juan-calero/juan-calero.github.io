@@ -3,7 +3,7 @@ import MyLogo from '../../../../img/JCLOGO.png'
 
 function JCLogo() {
     return (
-        <div className="fixed__left--jclogo">
+        <div className="left__jclogo">
             <img src={MyLogo} alt="" />
         </div>
     )

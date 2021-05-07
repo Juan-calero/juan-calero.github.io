@@ -3,7 +3,7 @@ import ProjetoItems from './items/ProjetoItems'
 
 function Projetos() {
     return (
-        <section className="projetos">
+        <section id="projetos" className="projetos">
             <h2>Projetos</h2>
             <ProjetoItems />
         </section>

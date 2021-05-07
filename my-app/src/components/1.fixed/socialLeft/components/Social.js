@@ -6,7 +6,7 @@ import Phone from '../../../../icons/phone-call.png'
 
 function Social() {
     return (
-        <div className="fixed__left--social">
+        <div className="left__social">
             <img src={Phone} alt="" />
             <img src={Email} alt="" />
             <img src={LinkedIn} alt="" />

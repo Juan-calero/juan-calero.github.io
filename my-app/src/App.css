@@ -7,6 +7,7 @@
 *::after,
 *::before {
   margin: 0%;
+  z-index: 999;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
+  overflow-x: hidden;
 }
 
 section {
@@ -25,11 +27,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-p {
-  color: white;
-  width: 60ch;
 }
 
 h1,
@@ -46,14 +43,28 @@ h4 {
   text-shadow: 0 0 6px rgba(194, 203, 255, 0.92), 0 0 30px rgba(6, 32, 177, 0.34), 0 0 12px rgba(133, 152, 255, 0.52), 0 0 21px rgba(36, 69, 255, 0.92), 0 0 34px rgba(6, 32, 177, 0.78), 0 0 54px rgba(6, 32, 177, 0.92);
 }
 
+h2,
+h3 {
+  font-size: 2.8rem;
+}
+
 h1 {
   font-size: 2rem;
   width: 28ch;
 }
 
-h2,
-h3 {
-  font-size: 2.8rem;
+h2 {
+  margin: 2rem 0;
+}
+
+p {
+  color: white;
+  width: 60ch;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .btn {
@@ -65,27 +76,16 @@ h3 {
   margin: 1rem 0;
 }
 
-.fixed {
+.fixed__bg {
   position: fixed;
   height: 100%;
   width: 100%;
-  z-index: -1;
   background: -webkit-gradient(linear, left top, left bottom, from(#000f74), to(#2b2b2b));
   background: linear-gradient(#000f74, #2b2b2b);
+  z-index: -1;
 }
 
-.fixed__left--jclogo {
-  position: fixed;
-  width: 40px;
-  top: 1rem;
-  left: 1rem;
-}
-
-.fixed__left--jclogo > * {
-  width: 8rem;
-}
-
-.fixed__left--social {
+.fixed__social {
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,13 +94,9 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
-  bottom: 15%;
+  bottom: 0%;
   left: 5%;
-}
-
-.fixed__left--social > * {
-  width: 40px;
+  gap: 2rem;
 }
 
 .fixed__right {
@@ -108,6 +104,66 @@ h3 {
   right: 0;
   bottom: 50%;
   top: 50%;
+}
+
+.left__jclogo {
+  position: fixed;
+  width: 40px;
+  top: 1rem;
+  left: 1rem;
+}
+
+.left__jclogo > * {
+  width: 8rem;
+}
+
+.left__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.left__social > * {
+  width: 40px;
+}
+
+.left__lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.left__lines > * {
+  width: 4px;
+  border-radius: 25px 25px 0 0;
+}
+
+.left__lines--line1 {
+  height: 7rem;
+  width: 4px;
+  background-color: #585858;
+}
+
+.left__lines--line2 {
+  height: 10rem;
+  background-color: #9B9B9B;
+}
+
+.left__lines--line3 {
+  height: 5rem;
+  background-color: #414141;
 }
 
 .fold {
@@ -171,7 +227,16 @@ h3 {
 }
 
 .oQueFaco {
+  position: relative;
   text-align: start;
+}
+
+.oQueFaco__bg {
+  opacity: 0.4;
+  z-index: 1;
+  position: absolute;
+  right: -50%;
+  top: 0%;
 }
 
 .oQueFaco__items {
@@ -205,6 +270,79 @@ h3 {
 
 .oQueFaco__item--text > h3 {
   font-size: 1.4rem;
+}
+
+.experiencia h2 {
+  margin-bottom: 3rem;
+}
+
+.experiencia__components {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.empresas {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.empresas__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.empresas img {
+  padding: 1rem;
+  width: 6rem;
+}
+
+.skills {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.skills__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.skills__navbar--ferramentas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills__navbar--ferramentas img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 3rem;
 }
 
 .projetos {
