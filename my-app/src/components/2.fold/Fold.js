@@ -5,7 +5,7 @@ import NavBar from './navBar/NavBar';
 
 function Fold(){
     return (
-        <section className="fold">
+        <section className="fold" id="fold">
             <NavBar />
             <Center />
         </section>

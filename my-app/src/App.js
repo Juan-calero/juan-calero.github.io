@@ -9,11 +9,19 @@ import Projetos from './components/6.projetos/Projetos';
 import Fixed from './components/1.fixed/Fixed';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Cursor from './components/utils/Cursor';
 
 function App() {
   AOS.init({ duration: 1000, offset: 340 });
   return (
-    <div className="App">
+    <div className="App"
+      onMouseMove={e => {
+        const cursor = document.querySelector('.cursor')
+        cursor.style.left = `${e.pageX}px`
+        cursor.style.top = `${e.pageY}px`
+      }}
+      >
+      <Cursor />
       <Fixed />
       <Fold />
       <Sobre />

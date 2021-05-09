@@ -5,7 +5,7 @@ function Curriculo() {
     return (
         <div className="contatos__curriculo">
             <img src={Robot} alt="" />
-            <button className="btn">Currículo</button>
+            <button onClick={()=>alert('Deseja Fazer Download do Curriculo?')} className="btn">Currículo</button>
         </div>
     )
 }

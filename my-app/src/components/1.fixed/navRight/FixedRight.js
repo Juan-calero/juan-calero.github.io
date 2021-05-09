@@ -1,25 +1,29 @@
 import React from 'react'
 
 class FixedRight extends React.Component {
-    constructor(){
+    constructor() {
         super()
         this.state = {
-            isActive: false
+            name: 1
         }
-    }
-    handleClick(){
-
     }
 
     render() {
+        const arr = ['fold', 'sobre', 'oQueFaco', 'experiencia', 'projetos', 'contato']
+        const mapped = arr.map(e => {
+            return (
+                <div
+                    onClick={() => {
+                        this.setState({ name: e })
+                        window.location.replace("/#" + e)
+                    }}
+                    className={"fixed__right--dot" + (this.state.name === e ? ' active' : '')}></div>
+            )
+        })
+
         return (
             <aside className="fixed__right">
-                <div onClick={() => this.setState({isActive: !this.state.isActive})} className={"fixed__right--dot" + (this.state.isActive ? ' active' :'')}></div>
-                <div onClick={() => this.setState({isActive: !this.state.isActive})} className={"fixed__right--dot" + (this.state.isActive ? ' active' :'')}></div>
-                <div className="fixed__right--dot"></div>
-                <div className="fixed__right--dot"></div>
-                <div className="fixed__right--dot"></div>
-                <div className="fixed__right--dot"></div>
+                {mapped}
             </aside>
         )
     }
