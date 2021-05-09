@@ -3,10 +3,9 @@ import React from 'react'
 function Navbar() {
     return (
         <div className="skills__navbar">
-            <a href="">Desenvolvimento</a>
-            <a href="">Design</a>
-            <a href="">Ferramentas</a>
-            <a href="">Conhecimentos</a>
+            <span tabIndex="0" className="skills__navbar--p3">Desenvolvimento</span>
+            <span tabIndex="0" className="skills__navbar--p1">Design</span>
+            <span tabIndex="0" className="skills__navbar--p2">Ferramentas</span>
         </div>
     )
 }

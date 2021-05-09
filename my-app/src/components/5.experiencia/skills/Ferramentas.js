@@ -1,14 +1,17 @@
 import React from 'react'
+import desenvolvimentoData from '../../utils/SkillsData/desenvolvimentoData';
 
-function Ferramentas(props) {
+function Ferramentas() {
+    const something = desenvolvimentoData.map(e => {
+        return(
+            <svg key={e.id} xmlns={e.xmlns} width={e.width} height={e.height} viewBox={e.viewBox} >
+                <path d={e.d}/>
+            </svg>
+        )
+    })
     return (
         <div className="skills__navbar--ferramentas">
-            <img src={props.icon1} alt="" srcset="" />
-            <img src={props.icon2} alt="" srcset="" />
-            <img src={props.icon3} alt="" srcset="" />
-            <img src={props.icon4} alt="" srcset="" />
-            <img src={props.icon5} alt="" srcset="" />
-            <img src={props.icon6} alt="" srcset="" />
+            {something}
         </div>
     )
 }

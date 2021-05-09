@@ -4,7 +4,7 @@ import ProjetoItems from './items/ProjetoItems'
 function Projetos() {
     return (
         <section id="projetos" className="projetos">
-            <h2>Projetos</h2>
+            <h2 data-aos="fade-in">Projetos</h2>
             <ProjetoItems />
         </section>
     )

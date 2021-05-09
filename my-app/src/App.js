@@ -7,9 +7,11 @@ import OQueFaco from './components/4.oQueFaco/OQueFaco';
 import Experiencia from './components/5.experiencia/Experiencia';
 import Projetos from './components/6.projetos/Projetos';
 import Fixed from './components/1.fixed/Fixed';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  AOS.init({ duration: 1000, offset: 340 });
   return (
     <div className="App">
       <Fixed />

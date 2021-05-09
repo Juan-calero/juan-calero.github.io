@@ -1,5 +1,4 @@
 import React from 'react'
-import _OQueFaco from '../../utils/_OQueFaco'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 import { faPaintBrush, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
@@ -7,10 +6,10 @@ import { faPaintBrush, faExternalLinkAlt } from '@fortawesome/free-solid-svg-ico
 function ProjetoItem(props) {
     return (
         <div className="projetos__item">
-            <img src={props.img} alt="" />
+            <img data-aos="flip-up" src={props.img} alt="" />
             <div className="projetos__item--text">
-                <h3>{props.title}</h3>
-                <div className="projetos__item--content">
+                <h3 data-aos="fade-up">{props.title}</h3>
+                <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" className="projetos__item--content">
                     <p>{props.content}</p>
                     <div className="projetos__item--icons">
                         <a href=''><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
@@ -18,7 +17,7 @@ function ProjetoItem(props) {
                         <a href=''><FontAwesomeIcon icon={faPaintBrush} size="lg"/></a>
                     </div>
                 </div>
-                <h4>{props.tech}</h4>
+                <h4 data-aos-offset="200" data-aos="fade">{props.tech}</h4>
             </div>
 
         </div>

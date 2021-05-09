@@ -120,10 +120,14 @@
   }
   .fixed__right--dot {
     opacity: 0.8;
-    background: #585858;
+    background: radial-gradient(#9b9b9b, transparent 40%);
     border-radius: 50%;
     height: 14px;
     width: 14px;
+  }
+  .fixed__right--dot:hover:not(.active) {
+    background: radial-gradient(white 40%, transparent 50%);
+    cursor: pointer;
   }
   .active {
     opacity: 1;
@@ -427,23 +431,48 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 2rem;
+    --gap: 2rem;
   }
   .skills__navbar--ferramentas {
+    fill: #9b9b9b;
     width: 80%;
+    font-size: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .skills__navbar--ferramentas img {
-    height: clamp(5rem,5.5vw,6rem);
-    -o-object-fit: contain;
-       object-fit: contain;
-    -webkit-filter: grayscale(40%);
-            filter: grayscale(40%);
+  .skills__navbar--ferramentas > * {
+    margin: 0 8% 2rem 0;
+  }
+  .skills__navbar > span {
+    color: #9b9b9b;
+    border-bottom: 2px solid #9b9b9b;
+    padding: 0.5rem 2rem;
+  }
+  .skills__navbar > span:hover, .skills__navbar > span:focus {
+    cursor: pointer;
+    text-shadow: 0 0 6px rgba(194, 203, 255, 0.92), 0 0 30px rgba(6, 32, 177, 0.34), 0 0 12px rgba(133, 152, 255, 0.52), 0 0 21px rgba(36, 69, 255, 0.92), 0 0 34px rgba(6, 32, 177, 0.78), 0 0 54px rgba(6, 32, 177, 0.92);
+    color: white;
+    border-bottom: 2px solid white;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(200%, #7284ff));
+    background: linear-gradient(transparent, #7284ff 200%);
+  }
+  .skills__navbar--p1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(200%, #585858));
+    background: linear-gradient(transparent, #585858 200%);
+  }
+  .skills__navbar--p2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(200%, #585858));
+    background: linear-gradient(transparent, #585858 200%);
+  }
+  .skills__navbar--p3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(200%, #585858));
+    background: linear-gradient(transparent, #585858 200%);
   }
   .projetos {
     height: 100%;

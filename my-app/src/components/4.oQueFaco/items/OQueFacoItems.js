@@ -1,27 +1,19 @@
 import React from 'react'
+import oQueFacoData from '../../utils/oQueFacoData'
 import OQueFacoItem from './OQueFacoItem'
-import Gears from "../../../icons/gears_icon.png"
-import Design from "../../../icons/design_icon.png"
-import Hands from "../../../icons/envolvimento_icon.png"
 
 function OQueFacoItems() {
+    const OQueFacoComponents = oQueFacoData.map(item => {
+        return <OQueFacoItem
+            id={item.id}
+            src={item.src}
+            title={item.title}
+            content={item.content}
+        />
+    })
     return (
         <div className="oQueFaco__items">
-            <OQueFacoItem
-                src={Gears}
-                title="Desenvolvimento"
-                content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ut dolor iste dignissimos?"
-            />
-            <OQueFacoItem
-                src={Design}
-                title="Design"
-                content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ut dolor iste dignissimos?"
-            />
-            <OQueFacoItem
-                src={Hands}
-                title="Pro-atividade"
-                content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ut dolor iste dignissimos?"
-            />
+            {OQueFacoComponents}
         </div>
     )
 }

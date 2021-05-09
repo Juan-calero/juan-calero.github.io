@@ -5,9 +5,9 @@ import SobreTitle from './SobreTitle';
 function Sobre(){
     return (
         <section id="sobre" className="sobre">
-            <img src={Brain} alt=""/>
+            <img data-aos="fade" src={Brain} alt=""/>
             <SobreTitle />
-            <p>Lorem ipsum amet consectetur adipisicing elit. Ullam soluta explicabo neque corporis repellat mollitia. Molestias ipsa sed hic earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta explicabo neque corporis repellat mollitia. Molestias ipsa sed hic earum!</p>
+            <p data-aos-offset="260" data-aos="fade">Lorem ipsum amet consectetur adipisicing elit. Ullam soluta explicabo neque corporis repellat mollitia. Molestias ipsa sed hic earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta explicabo neque corporis repellat mollitia. Molestias ipsa sed hic earum!</p>
         </section>
     )
 }

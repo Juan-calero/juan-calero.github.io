@@ -118,10 +118,14 @@
             height: 100%;
             &--dot {
                 opacity: 0.8;
-                background: #585858;
+                background: radial-gradient($lightGrey, transparent 40%);
                 border-radius: 50%;
                 height: 14px;
                 width: 14px;
+                &:hover:not(.active){
+                    background: radial-gradient(white 40%, transparent 50%);
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -165,15 +169,15 @@
             &--line1 {
                 height: 7rem;
                 width: 4px;
-                background-color: #585858;
+                background-color: $medGrey;
             }
             &--line2 {
                 height: 10rem;
-                background-color: #9b9b9b;
+                background-color: $lightGrey;
             }
             &--line3 {
                 height: 5rem;
-                background-color: #414141;
+                background-color: $darkGrey;
             }
         }
     }
@@ -257,15 +261,15 @@
             }
             &--line1 {
                 width: 7rem;
-                background-color: #585858;
+                background-color: $medGrey;
             }
             &--line2 {
                 width: 10rem;
-                background-color: #9b9b9b;
+                background-color: $lightGrey;
             }
             &--line3 {
                 width: 5rem;
-                background-color: #414141;
+                background-color: $darkGrey;
             }
             &:last-child {
                 transform: scaleX(-1) translateX(10px);
@@ -318,7 +322,7 @@
             align-items: flex-start;
         }
         & h3 {
-            color: #9b9b9b;
+            color: $lightGrey;
             text-shadow: none;
             margin-bottom: 3rem;
         }
@@ -349,15 +353,40 @@
         }
         &__navbar {
             display: flex;
-            gap: 2rem;
+            --gap: 2rem;
             &--ferramentas {
+                fill: $lightGrey;
                 width: 80%;
+                font-size: 3rem;
                 display: flex;
-                justify-content: space-between;
-                & img {
-                    height: #{"clamp(5rem,5.5vw,6rem)"};
-                    object-fit: contain;
-                    filter: grayscale(40%);
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                & > * {
+                    margin: 0 8% 2rem 0;
+                }
+            }
+            & > span {
+                color: $lightGrey;
+                border-bottom: 2px solid $lightGrey;
+                padding: 0.5rem 2rem;
+                &:hover,
+                &:focus {
+                    cursor: pointer;
+                    text-shadow: $neon;
+                    color: white;
+                    border-bottom: 2px solid white;
+                    background: linear-gradient(transparent, $lightBlue 200%);
+                }
+            }
+            &--p {
+                &1 {
+                    background: linear-gradient(transparent, $medGrey 200%);
+                }
+                &2 {
+                    background: linear-gradient(transparent, $medGrey 200%);
+                }
+                &3 {
+                    background: linear-gradient(transparent, $medGrey 200%);
                 }
             }
         }
@@ -377,7 +406,7 @@
             justify-content: center;
             gap: 1rem;
             &:nth-child(even) {
-                & h4{
+                & h4 {
                     width: 30ch;
                 }
                 & .projetos__item {

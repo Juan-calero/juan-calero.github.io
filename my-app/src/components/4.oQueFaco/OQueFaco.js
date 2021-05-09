@@ -5,7 +5,7 @@ import OQueFacoItems from './items/OQueFacoItems'
 function OQueFaco() {
     return (
         <section id="oquefaco" className="oQueFaco">
-            <h2>O Que Faço</h2>
+            <h2 data-aos="fade-right">O Que Faço</h2>
             <OQueFacoItems />
             <OQueFacoBG />
         </section>
