@@ -11,9 +11,9 @@
     z-index: 10;
     scroll-behavior: smooth;
     outline: none;
+    cursor: none;
   }
   body {
-    cursor: none;
     background: #2b2b2b;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -63,20 +63,43 @@
     text-decoration: none;
     color: white;
   }
+  #myface {
+    position: absolute;
+    z-index: 9999;
+    width: 15rem;
+    display: none;
+    border-radius: 50%;
+  }
   .cursor {
     position: absolute;
     z-index: 9999;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    border: 1px dashed white;
-    mix-blend-mode: difference;
     -webkit-filter: brightness(200%) contrast(200%);
             filter: brightness(200%) contrast(200%);
-    background: radial-gradient(white 20%, transparent 10%);
-    -webkit-animation: cursor 6s linear 0s infinite;
-            animation: cursor 6s linear 0s infinite;
     pointer-events: none;
+  }
+  .cursor--center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: white;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cursor--ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    border: 2px dashed white;
+    -webkit-animation: cursor 10s linear 0s infinite;
+            animation: cursor 10s linear 0s infinite;
   }
   @-webkit-keyframes cursor {
     from {
@@ -114,7 +137,6 @@
             transform: scale(1.1);
     -webkit-box-shadow: 0 0 6px rgba(194, 203, 255, 0.92), 0 0 30px rgba(6, 32, 177, 0.34), 0 0 12px rgba(133, 152, 255, 0.52), 0 0 21px rgba(36, 69, 255, 0.92), 0 0 34px rgba(6, 32, 177, 0.78), 0 0 54px rgba(6, 32, 177, 0.92);
             box-shadow: 0 0 6px rgba(194, 203, 255, 0.92), 0 0 30px rgba(6, 32, 177, 0.34), 0 0 12px rgba(133, 152, 255, 0.52), 0 0 21px rgba(36, 69, 255, 0.92), 0 0 34px rgba(6, 32, 177, 0.78), 0 0 54px rgba(6, 32, 177, 0.92);
-    cursor: pointer;
   }
   .fixed__bg {
     position: fixed;
@@ -164,7 +186,6 @@
   }
   .fixed__right--dot:hover:not(.active) {
     background: radial-gradient(white 40%, transparent 50%);
-    cursor: pointer;
   }
   .active {
     opacity: 1;
@@ -282,7 +303,6 @@
     text-shadow: 0 0 6px rgba(194, 203, 255, 0.92), 0 0 30px rgba(6, 32, 177, 0.34), 0 0 12px rgba(133, 152, 255, 0.52), 0 0 21px rgba(36, 69, 255, 0.92), 0 0 34px rgba(6, 32, 177, 0.78), 0 0 54px rgba(6, 32, 177, 0.92);
     border-radius: 25px;
     color: white;
-    cursor: pointer;
   }
   .sobre {
     padding: 0;
@@ -514,7 +534,6 @@
     padding: 0.5rem 2rem;
   }
   .skills__navbar > span:hover, .skills__navbar > span:focus {
-    cursor: pointer;
     text-shadow: 0 0 6px rgba(194, 203, 255, 0.92), 0 0 30px rgba(6, 32, 177, 0.34), 0 0 12px rgba(133, 152, 255, 0.52), 0 0 21px rgba(36, 69, 255, 0.92), 0 0 34px rgba(6, 32, 177, 0.78), 0 0 54px rgba(6, 32, 177, 0.92);
     color: white;
     border-bottom: 2px solid white;

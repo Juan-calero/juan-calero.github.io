@@ -1,4 +1,5 @@
 import React from 'react'
+import { cursorHoverBig, cursorHoverSmall } from '../../utils/CursorHoverHandler'
 
 class FixedRight extends React.Component {
     constructor() {
@@ -22,7 +23,10 @@ class FixedRight extends React.Component {
         })
 
         return (
-            <aside className="fixed__right">
+            <aside
+                className="fixed__right"
+                onMouseEnter={cursorHoverBig}
+                onMouseLeave={cursorHoverSmall}>
                 {mapped}
             </aside>
         )

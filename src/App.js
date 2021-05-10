@@ -10,6 +10,7 @@ import Fixed from './components/1.fixed/Fixed';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Cursor from './components/utils/Cursor';
+import MyFace from './components/utils/MyFace';
 
 function App() {
   AOS.init({ duration: 1000, offset: 340 });
@@ -20,7 +21,8 @@ function App() {
         cursor.style.left = `${e.pageX}px`
         cursor.style.top = `${e.pageY}px`
       }}
-      >
+    >
+      <MyFace />
       <Cursor />
       <Fixed />
       <Fold />

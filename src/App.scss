@@ -12,10 +12,10 @@
         z-index: 10;
         scroll-behavior: smooth;
         outline: none;
+        cursor: none;
     }
 
     body {
-        cursor: none;
         background: #2b2b2b;
         box-sizing: border-box;
         text-align: center;
@@ -74,28 +74,49 @@
         text-decoration: none;
         color: white;
     }
+    #myface {
+        position: absolute;
+        z-index: 9999;
+        width: 15rem;
+        display: none;
+        border-radius: 50%;
+    }
 
     .cursor {
         position: absolute;
         z-index: 9999;
-        width: 3rem;
-        height: 3rem;
-        border-radius: 50%;
-        border: 1px dashed white;
-        mix-blend-mode: difference;
         filter: brightness(200%) contrast(200%);
-        background: radial-gradient(white 20%, transparent 10%);
-        animation: cursor 6s linear 0s infinite;
         pointer-events: none;
+        &--center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: white;
+            transform: translate(-50%, -50%);
+        }
+        &--ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            border: 2px dashed white;
+            animation: cursor 10s linear 0s infinite;
+        }
     }
-@keyframes cursor {
-    from{
-        transform: translate(-50%,-50%) rotate(0deg);
+    @keyframes cursor {
+        from {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+        to {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
     }
-    to{
-        transform: translate(-50%,-50%) rotate(360deg);
-    }
-}
     .btn {
         font-size: 1rem;
         background: transparent;
@@ -109,7 +130,6 @@
         &:focus {
             transform: scale(1.1);
             box-shadow: $neon;
-            cursor: pointer;
         }
     }
 
@@ -147,7 +167,6 @@
                 width: 14px;
                 &:hover:not(.active) {
                     background: radial-gradient(white 40%, transparent 50%);
-                    cursor: pointer;
                 }
             }
         }
@@ -250,7 +269,6 @@
                 text-shadow: $neon;
                 border-radius: 25px;
                 color: white;
-                cursor: pointer;
             }
         }
     }
@@ -403,7 +421,6 @@
                 padding: 0.5rem 2rem;
                 &:hover,
                 &:focus {
-                    cursor: pointer;
                     text-shadow: $neon;
                     color: white;
                     border-bottom: 2px solid white;
