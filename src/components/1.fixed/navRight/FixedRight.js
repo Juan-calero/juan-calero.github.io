@@ -14,7 +14,6 @@ class FixedRight extends React.Component {
             const section = document.getElementById(e)
             const sectionTop = section.getBoundingClientRect().top
             const dot = document.querySelector(`[dot=${e}]`)
-            console.log(e, section.scrollHeight, sectionTop)
 
             sectionTop < 400 && sectionTop >= 400 - section.scrollHeight ?
                 dot.classList.add('active') :
@@ -48,6 +47,3 @@ class FixedRight extends React.Component {
 }
 
 export default FixedRight
-
-///////////REDO THIS IS TOO BIG
-///////////////////////
