@@ -4,7 +4,7 @@ import desenvolvimentoData from '../../utils/SkillsData/desenvolvimentoData';
 function Ferramentas() {
     const something = desenvolvimentoData.map(e => {
         return(
-            <svg key={e.id} xmlns={e.xmlns} width={e.width} height={e.height} viewBox={e.viewBox} >
+            <svg skills={e.skill} key={e.id} xmlns={e.xmlns} width={e.width} height={e.height} viewBox={e.viewBox} >
                 <path d={e.d}/>
             </svg>
         )

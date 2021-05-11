@@ -176,7 +176,12 @@
         background: radial-gradient($darkBlue 30%, white 55%);
         box-shadow: $neon;
     }
-
+    .activeSVG {
+        fill: white;
+        filter: drop-shadow(0 0 6px rgba(194, 203, 255, 0.92)) drop-shadow(0 0 30px rgba(6, 32, 177, 0.34))
+            drop-shadow(0 0 12px rgba(133, 152, 255, 0.52)) drop-shadow(0 0 21px rgba(36, 69, 255, 0.92))
+            drop-shadow(0 0 34px rgba(6, 32, 177, 0.78)) drop-shadow(0 0 54px rgba(6, 32, 177, 0.92));
+    }
     .left {
         &__jclogo {
             position: fixed;

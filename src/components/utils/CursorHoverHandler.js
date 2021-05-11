@@ -1,5 +1,3 @@
-import React from 'react'
-
 function cursorHoverBig() {
     const cursor = document.querySelector('.cursor--ring');
     const cursorCenter = document.querySelector('.cursor--center');

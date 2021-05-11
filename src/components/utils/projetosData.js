@@ -9,7 +9,7 @@ const projetosData = [
         content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis distinctio delectus doloribus laborum accusantium quia, esse quam labore numquam aut!',
         techUsed: "Wix Corvid",
         gitHubURL: "GITHUB URL HERE",
-        webPageURL: "WEBPAGE URL HERE",
+        webPageURL: "https://www.musicaemsi.com/",
         mockupURL: "MOCKUP URL HERE",
     },
     {
@@ -18,8 +18,8 @@ const projetosData = [
         title: "Washome",
         content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis distinctio delectus doloribus laborum accusantium quia, esse quam labore numquam aut!',
         techUsed: "HTML SASS JAVASCRIPT ADOBE XD ADOBE DIMENSION",
-        gitHubURL: "GITHUB URL HERE",
-        webPageURL: "WEBPAGE URL HERE",
+        gitHubURL: "https://github.com/Juan-calero/Washome",
+        webPageURL: "http://www.washome.pt/",
         mockupURL: "MOCKUP URL HERE",
     },
     {
@@ -28,7 +28,7 @@ const projetosData = [
         title: "Portfolio Pessoal",
         content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis distinctio delectus doloribus laborum accusantium quia, esse quam labore numquam aut!',
         techUsed: "React",
-        gitHubURL: "GITHUB URL HERE",
+        gitHubURL: "https://github.com/Juan-calero/juan-calero.github.io",
         webPageURL: "WEBPAGE URL HERE",
         mockupURL: "MOCKUP URL HERE",
     }

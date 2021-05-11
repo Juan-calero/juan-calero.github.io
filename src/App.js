@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Fold from './components/2.fold/Fold';
 import Sobre from './components/3.sobre/Sobre';

@@ -7,10 +7,10 @@ import Phone from '../../../../icons/phone-call.png'
 function Social() {
     return (
         <div className="left__social">
-            <a target="_blank" href="tel:+351915019341"><img src={Phone} alt="" /></a>
-            <a href="mailto:hello.juancalero@gmail.com"><img src={Email} alt="" /></a>
-            <a target="_blank" href="https://www.linkedin.com/in/juanOCalero/"><img src={LinkedIn} alt="" /></a>
-            <a target="_blank" href="https://github.com/Juan-calero"><img src={Github} alt="" /></a>
+            <a rel="noreferrer" target="_blank" href="tel:+351915019341"><img src={Phone} alt="" /></a>
+            <a rel="noreferrer" href="mailto:hello.juancalero@gmail.com"><img src={Email} alt="" /></a>
+            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/juanOCalero/"><img src={LinkedIn} alt="" /></a>
+            <a rel="noreferrer" target="_blank" href="https://github.com/Juan-calero"><img src={Github} alt="" /></a>
         </div>
     )
 }
