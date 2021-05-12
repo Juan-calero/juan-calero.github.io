@@ -122,9 +122,6 @@ a {
             border-radius: 50%;
             height: 14px;
             width: 14px;
-            &:hover:not(.active) {
-                background: radial-gradient(white 40%, transparent 50%);
-            }
         }
     }
 }
@@ -155,10 +152,6 @@ a {
         gap: 10px;
         & * {
             width: 40px;
-            &:hover,
-            &:focus {
-                filter: brightness(200%);
-            }
         }
     }
     &__lines {
@@ -196,10 +189,6 @@ a {
         align-items: center;
         gap: #{"max(1.5vw,1.4rem)"};
         color: white;
-        & a:hover,
-        & a:focus {
-            text-shadow: $neon;
-        }
         & > button {
             margin: 0px;
         }
@@ -222,15 +211,6 @@ a {
         border: 2px solid $lightBlue;
         margin: 2rem 0;
         transition: all 0.2s;
-        &:hover,
-        &:focus {
-            transform: scale(1.2);
-            border-color: white;
-            box-shadow: $neon;
-            text-shadow: $neon;
-            border-radius: 25px;
-            color: white;
-        }
     }
 }
 
@@ -388,15 +368,7 @@ a {
             }
         }
         &--p {
-            &1 {
-                background: linear-gradient(transparent, $medGrey 200%);
-            }
-            &2 {
-                background: linear-gradient(transparent, $medGrey 200%);
-            }
-            &3 {
-                background: linear-gradient(transparent, $medGrey 200%);
-            }
+            background: linear-gradient(transparent, $medGrey 200%);
         }
     }
 }
@@ -446,10 +418,6 @@ a {
             gap: #{"clamp(1.6rem,2vw,2.2rem)"};
             & > * {
                 color: $lightBlue;
-                &:hover,
-                &:focus {
-                    color: white;
-                }
             }
         }
     }
@@ -563,10 +531,6 @@ a {
             gap: 10px;
             & * {
                 width: 40px;
-                &:hover,
-                &:focus {
-                    filter: brightness(200%);
-                }
             }
         }
         &__lines {
@@ -604,10 +568,6 @@ a {
             align-items: center;
             gap: #{"max(1.5vw,1.4rem)"};
             color: white;
-            & a:hover,
-            & a:focus {
-                text-shadow: $neon;
-            }
             & > button {
                 margin: 0px;
             }
@@ -630,15 +590,6 @@ a {
             border: 2px solid $lightBlue;
             margin: 2rem 0;
             transition: all 0.2s;
-            &:hover,
-            &:focus {
-                transform: scale(1.2);
-                border-color: white;
-                box-shadow: $neon;
-                text-shadow: $neon;
-                border-radius: 25px;
-                color: white;
-            }
         }
     }
 
@@ -1059,13 +1010,6 @@ a {
             }
             & > span {
                 padding: 0.5rem 2rem;
-                &:hover,
-                &:focus {
-                    text-shadow: $neon;
-                    color: white;
-                    border-bottom: 2px solid white;
-                    background: linear-gradient(transparent, $lightBlue 200%);
-                }
             }
         }
     }
