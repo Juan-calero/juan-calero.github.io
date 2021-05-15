@@ -91,6 +91,9 @@ a {
 .cursor {
     display: none;
 }
+.burger {
+    display: none;
+}
 
 .btn {
     font-size: 1rem;
@@ -447,6 +450,8 @@ a {
         }
     }
 }
+///////////////////////////////////
+//////////////MOBILE//////////////
 
 @media screen and (max-width: 1200px) {
     h1 {
@@ -466,6 +471,59 @@ a {
         overflow: hidden;
         padding: 7rem 3%;
     }
+    .burger {
+        display: block;
+        &__bg {
+            position: fixed;
+            z-index: 340;
+            top: 0%;
+            right: 0%;
+            background: white;
+            height: 5.5rem;
+            width: 6.5rem;
+            border-bottom-left-radius: 200%;
+            transition: all .4s;
+        }
+        &__active {
+            height: 100vh;
+            width: 100vw;
+            border-bottom-left-radius: 0;
+            &  .burger__icon--line{ 
+                background: $darkBlue;
+            }
+        }
+        &__icon {
+            position: fixed;
+            top: 0%;
+            right: 0%;
+            margin: 1rem 1.3rem;
+            //background: green;
+            height: 2.5rem;
+            width: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            &--line {
+                width: 100%;
+                height: 5px;
+                border-radius: 20%;
+                background: $medGrey;
+            }
+        }
+        &__nav {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &--item {
+                font-family: 'Nebula Regular';
+                margin: 1rem 0;
+                color: $lightBlue;
+            }
+        }
+    }
+
     .fixed {
         &__social {
             position: fixed;
@@ -518,13 +576,13 @@ a {
             }
         }
     }
-
+    //////////////////////NEEED TO REDO THIS OR DELETE NAVBAR ON MOBILE
     .fold {
         padding-top: 0;
         position: relative;
         &__navbar {
             padding: 2rem 4rem;
-            display: flex;
+            display: none;
             justify-content: flex-end;
             align-items: center;
             //     gap: #{"max(1.5vw,1.4rem)"};
@@ -628,7 +686,7 @@ a {
         }
     }
     .contato {
-       flex-direction: column;
+        flex-direction: column;
     }
     .contatos {
         width: 100%;
@@ -647,6 +705,9 @@ a {
         }
     }
 }
+
+///////////////////////////////////
+//////////////LAPTOP//////////////
 
 @media screen and (min-width: 1200px) {
     *,
@@ -702,7 +763,6 @@ a {
             box-shadow: $neon;
         }
     }
-
     .fixed {
         &__social {
             position: fixed;
@@ -809,7 +869,7 @@ a {
         text-align: start;
     }
     .experiencia {
-        & h2{
+        & h2 {
             margin-bottom: 7rem;
         }
         &__components {

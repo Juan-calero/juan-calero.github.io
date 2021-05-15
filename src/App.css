@@ -91,6 +91,10 @@ a {
   display: none;
 }
 
+.burger {
+  display: none;
+}
+
 .btn {
   font-size: 1rem;
   background: transparent;
@@ -669,6 +673,74 @@ a {
     overflow: hidden;
     padding: 7rem 3%;
   }
+  .burger {
+    display: block;
+  }
+  .burger__bg {
+    position: fixed;
+    z-index: 340;
+    top: 0%;
+    right: 0%;
+    background: white;
+    height: 5.5rem;
+    width: 6.5rem;
+    border-bottom-left-radius: 200%;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+  .burger__active {
+    height: 100vh;
+    width: 100vw;
+    border-bottom-left-radius: 0;
+  }
+  .burger__active .burger__icon--line {
+    background: #000f74;
+  }
+  .burger__icon {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    margin: 1rem 1.3rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .burger__icon--line {
+    width: 100%;
+    height: 5px;
+    border-radius: 20%;
+    background: #585858;
+  }
+  .burger__nav {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .burger__nav--item {
+    font-family: 'Nebula Regular';
+    margin: 1rem 0;
+    color: #7284ff;
+  }
   .fixed__social {
     position: fixed;
     bottom: 0%;
@@ -726,9 +798,7 @@ a {
   }
   .fold__navbar {
     padding: 2rem 4rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;

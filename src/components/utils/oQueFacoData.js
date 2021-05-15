@@ -6,7 +6,7 @@ const oQueFacoData = [
     {
         id: 1,
         title: "Desenvolvimento",
-        content: "Apaixonado por web design e desenvolvimento. Enquanto cresco como desenvolvedor, escrever código limpo e legível que poderá ser usado por outros e potênciado para criar software apelativo",
+        content: "Apaixonado pelo desenvolvimento front-end, esforço-me diariamente por produzir código simples, limpo e legível, que poderá ser usado por outros e potenciado para criar software excepcional",
         src: Gears,
     },
     {
