@@ -481,7 +481,7 @@ a {
   background: linear-gradient(transparent, #585858 200%);
 }
 
-.skills__navbar > span:hover, .skills__navbar > span:focus {
+.skills__navbar > span:hover {
   text-shadow: 0 0 6px rgba(194, 203, 255, 0.92), 0 0 30px rgba(6, 32, 177, 0.34), 0 0 12px rgba(133, 152, 255, 0.52), 0 0 21px rgba(36, 69, 255, 0.92), 0 0 34px rgba(6, 32, 177, 0.78), 0 0 54px rgba(6, 32, 177, 0.92);
   color: white;
   border-bottom: 2px solid white;
@@ -611,12 +611,16 @@ a {
 }
 
 .contatos__text {
-  width: 60ch;
-  margin: 0 auto;
+  width: min(90%, 60ch);
+}
+
+.contatos__text a {
+  margin-right: 2rem;
+  color: #9b9b9b;
 }
 
 .contatos__text button {
-  width: 10rem;
+  padding: 1rem;
 }
 
 .matrix {
@@ -685,8 +689,8 @@ a {
     height: 5.5rem;
     width: 6.5rem;
     border-bottom-left-radius: 200%;
-    -webkit-transition: all .4s;
-    transition: all .4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
   .burger__active {
     height: 100vh;
@@ -737,7 +741,7 @@ a {
             justify-content: center;
   }
   .burger__nav--item {
-    font-family: 'Nebula Regular';
+    font-family: "Nebula Regular";
     margin: 1rem 0;
     color: #7284ff;
   }
@@ -921,9 +925,6 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .contatos {
-    width: 100%;
   }
   .matrix {
     width: 100%;
@@ -1208,6 +1209,9 @@ a {
   }
   .contatos {
     text-align: start;
+  }
+  .contatos__text a:hover, .contatos__text a:focus {
+    color: white;
   }
 }
 /*# sourceMappingURL=App.css.map */

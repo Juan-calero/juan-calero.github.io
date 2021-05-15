@@ -10,8 +10,17 @@ export default function ContatoText(params) {
                 problemas reais numa maneira que otimiza as nossas respetivas experiências e conhecimentos.<br /><br />
 
                 Sinta-se livre de me contactar através de:<br /><br />
-                </p>
-            <button className="btn">Currículo</button>
+                <a onMouseEnter={cursorHoverBig}
+                    onMouseLeave={cursorHoverSmall}
+                    href="tel:+351915019341">+351 915019341</a>
+                <a onMouseEnter={cursorHoverBig}
+                    onMouseLeave={cursorHoverSmall}
+                    href="mailto:hello.juancalero@gmail.com">hello.juancalero@gmail.com</a>
+            </p>
+            <button onMouseEnter={cursorHoverBig}
+                onMouseLeave={cursorHoverSmall}
+                className="btn">Download Currículo</button>
+
         </div>
     )
 };

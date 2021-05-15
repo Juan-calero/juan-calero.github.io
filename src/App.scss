@@ -340,8 +340,7 @@ a {
             color: $lightGrey;
             border-bottom: 2px solid $lightGrey;
             background: linear-gradient(transparent, $medGrey 200%);
-            &:hover,
-            &:focus {
+            &:hover{
                 text-shadow: $neon;
                 color: white;
                 border-bottom: 2px solid white;
@@ -404,7 +403,6 @@ a {
 .contato {
     background: linear-gradient(rgba(0, 0, 0, 0), $darkBlue);
     position: relative;
-    // width: 100%;
     display: flex;
     justify-content: space-evenly;
     & > * {
@@ -412,15 +410,17 @@ a {
     }
 }
 .contatos {
-    // background: red;
     display: flex;
     flex-direction: column;
     align-items: center;
     &__text {
-        width: 60ch;
-        margin: 0 auto;
+        width: #{"min(90%, 60ch)"};
+        & a {
+            margin-right: 2rem;
+            color: $lightGrey;
+        }
         & button {
-            width: 10rem;
+            padding: 1rem;
         }
     }
 }
@@ -482,13 +482,13 @@ a {
             height: 5.5rem;
             width: 6.5rem;
             border-bottom-left-radius: 200%;
-            transition: all .4s;
+            transition: all 0.4s;
         }
         &__active {
             height: 100vh;
             width: 100vw;
             border-bottom-left-radius: 0;
-            &  .burger__icon--line{ 
+            & .burger__icon--line {
                 background: $darkBlue;
             }
         }
@@ -497,7 +497,6 @@ a {
             top: 0%;
             right: 0%;
             margin: 1rem 1.3rem;
-            //background: green;
             height: 2.5rem;
             width: 2.5rem;
             display: flex;
@@ -517,7 +516,7 @@ a {
             align-items: center;
             justify-content: center;
             &--item {
-                font-family: 'Nebula Regular';
+                font-family: "Nebula Regular";
                 margin: 1rem 0;
                 color: $lightBlue;
             }
@@ -689,7 +688,6 @@ a {
         flex-direction: column;
     }
     .contatos {
-        width: 100%;
     }
     .matrix {
         width: 100%;
@@ -943,5 +941,10 @@ a {
     }
     .contatos {
         text-align: start;
+        &__text {
+            & a:hover, & a:focus{
+                color: white;
+            }
+        }
     }
 }

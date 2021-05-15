@@ -1,5 +1,5 @@
 import React from 'react';
-import ContatoText from './form/Form';
+import ContatoText from './form/ContatoText';
 import Matrix from './Matrix';
 
 function Contact() {
