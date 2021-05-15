@@ -7,7 +7,9 @@ import { cursorHoverBig, cursorHoverSmall } from '../../utils/CursorHoverHandler
 function ProjetoItem(props) {
     return (
         <div className="projetos__item">
-            <img data-aos="flip-up" src={props.img} alt="" />
+            <div data-aos="flip-up" className="projetos__item--img">
+                <img src={props.img} alt="" />
+            </div>
             <div className="projetos__item--text">
                 <h3 data-aos="fade-up">{props.title}</h3>
                 <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" className="projetos__item--content">
