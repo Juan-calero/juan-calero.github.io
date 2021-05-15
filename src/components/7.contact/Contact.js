@@ -1,15 +1,13 @@
 import React from 'react';
-import Curriculo from './curriculo/Curriculo';
-import Form from './form/Form';
+import ContatoText from './form/Form';
 import Matrix from './Matrix';
 
 function Contact() {
     return (
         <section className="contato" id="contato">
-            <div className="contatoto">
                 <div className="contatos">
                     <h2>Contactos</h2>
-                    <Form />
+                    <ContatoText />
                 </div>
                 <div className="matrix">
                     <div className="matrix__box">
@@ -21,7 +19,6 @@ function Contact() {
                         <Matrix />
                     </div>
                 </div>
-            </div>
         </section>
     )
 }

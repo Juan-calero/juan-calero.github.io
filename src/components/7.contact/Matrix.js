@@ -9,7 +9,7 @@ class Matrix extends React.Component {
         }
     }
     componentDidMount() {
-        setInterval(() => {
+        this.interval = setInterval(() => {
             const arr2 = Array.from(Array(5 + Math.floor(Math.random() * 3)).keys())
             this.mapped = arr2.map(() => {
                 this.setState(
@@ -29,8 +29,10 @@ class Matrix extends React.Component {
                     {this.mapped}
                 </div>
         )
-    }
+        }
+        componentWillUnmount(){
+            clearInterval(this.interval)
+        }
 }
-
 
 export default Matrix

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 @font-face {
   font-family: "Nebula Regular";
   src: url("./fonts/nebula.regular.otf");
@@ -67,6 +68,7 @@ h3 {
 }
 
 p {
+  font-family: "Nunito", sans-serif;
   font-size: clamp(1rem,1vw,1.25rem);
   color: white;
   width: min(90%, 60ch);
@@ -257,6 +259,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: start;
 }
 
 .sobre h2 {
@@ -437,9 +440,9 @@ a {
 }
 
 .skills {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,19 +577,9 @@ a {
 }
 
 .contato {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000f74));
   background: linear-gradient(rgba(0, 0, 0, 0), #000f74);
-}
-
-.contatoto {
   position: relative;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,7 +588,7 @@ a {
           justify-content: space-evenly;
 }
 
-.contatoto > * {
+.contato > * {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -613,53 +606,12 @@ a {
           align-items: center;
 }
 
-.contatos__form {
-  width: min(100%,35rem);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.contatos__text {
+  width: 60ch;
+  margin: 0 auto;
 }
 
-.contatos__form > input[type="text"] {
-  border-radius: 6px;
-}
-
-.contatos__form > label {
-  text-align: start;
-  margin: 0.5rem 4px;
-  color: white;
-}
-
-.contatos__form > textarea {
-  resize: none;
-}
-
-.contatos__form > input[type="button"] {
-  width: 10rem;
-}
-
-.contatos__curriculo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contatos__curriculo > img {
-  width: min(60vw ,18rem);
-}
-
-.contatos__curriculo button {
+.contatos__text button {
   width: 10rem;
 }
 
@@ -688,7 +640,7 @@ a {
 
 .matrix__line {
   position: relative;
-  margin: 0 1.4rem;
+  margin: 0 min(4vw, 1.4rem);
   opacity: 0.1;
   z-index: -1;
 }
@@ -894,21 +846,27 @@ a {
   .projetos__item--icons {
     margin: 0 auto;
   }
-  .contatoto {
+  .contato {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .contatos {
-    text-align: center;
     width: 100%;
   }
-  .contatos__curriculo > img {
-    margin-top: 2rem;
+  .matrix {
+    width: 100%;
+  }
+  .matrix__box {
+    height: 20rem;
+  }
+  .matrix__line {
+    opacity: 0.15;
+  }
+  .matrix__line p {
+    font-size: 2.4rem;
+    line-height: 3rem;
   }
 }
 
@@ -1105,6 +1063,9 @@ a {
   .oQueFaco {
     text-align: start;
   }
+  .experiencia h2 {
+    margin-bottom: 7rem;
+  }
   .experiencia__components {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1174,11 +1135,6 @@ a {
   }
   .projetos__item--icons > *:hover, .projetos__item--icons > *:focus {
     color: white;
-  }
-  .contatoto {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
   .contatos {
     text-align: start;
