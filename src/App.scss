@@ -174,7 +174,7 @@ a {
 }
 
 .fold {
-    height: #{"max(40rem,100vh)"};
+    height: #{"max(40rem,90vh)"};
     padding-top: 0;
     position: relative;
     &__navbar {
@@ -340,7 +340,7 @@ a {
             color: $lightGrey;
             border-bottom: 2px solid $lightGrey;
             background: linear-gradient(transparent, $medGrey 200%);
-            &:hover{
+            &:hover {
                 text-shadow: $neon;
                 color: white;
                 border-bottom: 2px solid white;
@@ -418,6 +418,7 @@ a {
         & a {
             margin-right: 2rem;
             color: $lightGrey;
+            display: inline-block;
         }
         & button {
             padding: 1rem;
@@ -942,7 +943,8 @@ a {
     .contatos {
         text-align: start;
         &__text {
-            & a:hover, & a:focus{
+            & a:hover,
+            & a:focus {
                 color: white;
             }
         }

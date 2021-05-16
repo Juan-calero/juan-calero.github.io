@@ -18,9 +18,9 @@ function ProjetoItem(props) {
                         onMouseEnter={cursorHoverBig}
                         onMouseLeave={cursorHoverSmall}
                         className="projetos__item--icons">
-                        <a rel="noreferrer" target="_blank" href={props.site}><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
-                        <a rel="noreferrer" target="_blank" href={props.github}><FontAwesomeIcon icon={faGithubAlt} size="lg" /></a>
-                        <a rel="noreferrer" target="_blank" href={props.mockup}><FontAwesomeIcon icon={faPaintBrush} size="lg" /></a>
+                        <a rel="noreferrer" style={{display: !props.site && 'none'}} target="_blank" href={props.site}><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                        <a rel="noreferrer" style={{display: !props.github && 'none'}} target="_blank" href={props.github}><FontAwesomeIcon icon={faGithubAlt} size="lg" /></a>
+                        <a rel="noreferrer" style={{display: !props.mockup && 'none'}} target="_blank" href={props.mockup}><FontAwesomeIcon icon={faPaintBrush} size="lg" /></a>
                     </div>
                 </div>
                 <h4 data-aos-offset="200" data-aos="fade">{props.tech}</h4>

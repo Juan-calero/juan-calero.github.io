@@ -201,7 +201,7 @@ a {
 }
 
 .fold {
-  height: max(40rem,100vh);
+  height: max(40rem,90vh);
   padding-top: 0;
   position: relative;
 }
@@ -617,6 +617,7 @@ a {
 .contatos__text a {
   margin-right: 2rem;
   color: #9b9b9b;
+  display: inline-block;
 }
 
 .contatos__text button {
@@ -1210,7 +1211,8 @@ a {
   .contatos {
     text-align: start;
   }
-  .contatos__text a:hover, .contatos__text a:focus {
+  .contatos__text a:hover,
+  .contatos__text a:focus {
     color: white;
   }
 }
