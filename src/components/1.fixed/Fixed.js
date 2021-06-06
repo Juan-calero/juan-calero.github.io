@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import FixedRight from "./FixedRight";
 import FixedLeft from "./FixedLeft";
 import Burger from "./Burger";
