@@ -1,16 +1,19 @@
-import React from 'react'
-import FixedBg from './bg/FixedBg'
-import FixedRight from './navRight/FixedRight'
-import FixedLeft from './socialLeft/FixedLeft'
+import React, { useEffect, useState } from "react";
+import FixedRight from "./FixedRight";
+import FixedLeft from "./FixedLeft";
+import Burger from "./Burger";
 
 function Fixed() {
-    return (
-        <div className="fixed">
-            <FixedBg />
-            <FixedLeft />
-            <FixedRight />
-        </div>
-    )
+  return (
+    <React.Fragment>
+      <aside className="fixed__bg"></aside>;
+      <Burger />
+      <FixedLeft />
+      <FixedRight />
+    </React.Fragment>
+  );
 }
 
-export default Fixed
+export default Fixed;
+
+//NEEDS REFACTORING

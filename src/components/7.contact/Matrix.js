@@ -1,38 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { matrixArr } from "../utils/utils";
 
-class Matrix extends React.Component {
-    constructor() {
-        super()
-        this.state = {
-            count: 'a',
-            arr: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P']
-        }
-    }
-    componentDidMount() {
-        this.interval = setInterval(() => {
-            const arr2 = Array.from(Array(5 + Math.floor(Math.random() * 3)).keys())
-            this.mapped = arr2.map(() => {
-                this.setState(
-                    {
-                        count: this.state.arr[Math.floor(Math.random() * this.state.arr.length)]
-                    })
-                return (
-                    <p>{this.state.count}</p>
-                )
-            })
-        }, 350)
-    }
+function Matrix() {
+  const [codeLine, setCodeLine] = useState(null);
 
-    render() {
-        return (
-                <div className="matrix__line">
-                    {this.mapped}
-                </div>
-        )
-        }
-        componentWillUnmount(){
-            clearInterval(this.interval)
-        }
+  const matrixInterval = () => {
+    setCodeLine(() => {
+      const count = matrixArr[Math.floor(Math.random() * matrixArr.length)];
+      return <p className="matrix__line">{count}</p>;
+    });
+  };
+
+  useEffect(() => {
+    setInterval(matrixInterval, 350);
+    return () => {
+      clearInterval(matrixInterval, 350);
+    };
+  }, []);
+
+  return <React.Fragment>{codeLine}</React.Fragment>;
 }
 
-export default Matrix
+export default Matrix;

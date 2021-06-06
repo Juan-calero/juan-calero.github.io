@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 function Cursor() {
-    return (
-        <div className="cursor">
-            <div className="cursor--center"></div>
-            <div className="cursor--ring"></div>
-        </div>
-    )
+  return (
+    <aside className="cursor">
+      <div className="cursor--center"></div>
+      <div className="cursor--ring"></div>
+    </aside>
+  );
 }
 
-export default Cursor
+export default Cursor;
