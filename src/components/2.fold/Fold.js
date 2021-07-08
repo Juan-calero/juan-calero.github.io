@@ -1,7 +1,7 @@
-import React from "react";
-import Center from "./Center";
-import NavBar from "./NavBar";
-import JCFace from "../../img/jcface.jpg";
+import React from "react"
+import Center from "./Center"
+import NavBar from "./NavBar"
+import JCFace from "../../img/jcface.jpg"
 
 function Fold() {
   return (
@@ -10,7 +10,7 @@ function Fold() {
       <NavBar />
       <Center />
     </section>
-  );
+  )
 }
 
-export default Fold;
+export default Fold

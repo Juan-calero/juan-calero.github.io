@@ -1,17 +1,17 @@
-import React from "react";
-import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler";
+import React from "react"
+import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler"
 
 function Center() {
   const enterMyFace = (e) => {
-    const image = document.getElementById("myface");
-    image.style.top = `${e.pageY}px`;
-    image.style.left = `${e.pageX}px`;
-    image.style.display = "block";
-  };
+    const image = document.getElementById("myface")
+    image.style.top = `${e.pageY}px`
+    image.style.left = `${e.pageX}px`
+    image.style.display = "block"
+  }
   const leaveMyFace = () => {
-    const image = document.getElementById("myface");
-    image.style.display = "none";
-  };
+    const image = document.getElementById("myface")
+    image.style.display = "none"
+  }
   return (
     <div className="fold__center">
       <h1>
@@ -34,9 +34,9 @@ function Center() {
         Saber Mais {">"}
       </button>
     </div>
-  );
+  )
 }
 
-export default Center;
+export default Center
 
 /////NEEDS REFACTORING

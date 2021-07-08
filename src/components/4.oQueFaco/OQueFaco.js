@@ -1,12 +1,12 @@
-import React from "react";
-import BigGear from "../../img/black-big-gear-png-transparent.png";
-import oQueFacoData from "../utils/oQueFacoData";
-import OQueFacoItem from "./OQueFacoItem";
+import React from "react"
+import BigGear from "../../img/black-big-gear-png-transparent.png"
+import oQueFacoData from "../utils/oQueFacoData"
+import OQueFacoItem from "./OQueFacoItem"
 
 function OQueFaco() {
   const OQueFacoComponents = oQueFacoData.map((item, index) => (
     <OQueFacoItem key={index} {...item} />
-  ));
+  ))
 
   return (
     <section id="o_Que_Faço" className="oQueFaco">
@@ -16,7 +16,7 @@ function OQueFaco() {
         <img data-aos="fade-left" src={BigGear} alt="" />
       </aside>
     </section>
-  );
+  )
 }
 
-export default OQueFaco;
+export default OQueFaco

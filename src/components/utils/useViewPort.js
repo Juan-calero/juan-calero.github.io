@@ -1,17 +1,17 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
 
 const useViewPort = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(window.innerWidth)
   const handleResize = () => {
-    setWidth(window.innerWidth);
-  };
+    setWidth(window.innerWidth)
+  }
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize)
     return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-  return { width };
-};
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
+  return { width }
+}
 
-export default useViewPort;
+export default useViewPort

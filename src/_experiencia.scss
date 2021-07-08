@@ -1,0 +1,133 @@
+.experiencia {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__components {
+        display: flex;
+    }
+    & h3 {
+        color: $lightGrey;
+        text-shadow: none;
+        margin-bottom: 3rem;
+    }
+}
+.empresas {
+    text-align: center;
+    flex: 1;
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.skills {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+    }
+    &__navbar {
+        display: flex;
+        margin-bottom: 2.7rem;
+        & span {
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $lightGrey;
+            border-bottom: 2px solid $lightGrey;
+            background: linear-gradient(transparent, $medGrey 200%);
+            &:hover {
+                text-shadow: $neon;
+                color: white;
+                border-bottom: 2px solid white;
+                background: linear-gradient(transparent, $lightBlue 200%);
+            }
+        }
+        &--icons {
+            fill: $lightGrey;
+            font-size: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .experiencia {
+        &__components {
+            flex-direction: column;
+        }
+        & h2 {
+            margin-bottom: 12rem;
+        }
+    }
+    .empresas {
+        &__logo {
+            margin-bottom: 13rem;
+            & img {
+                margin: 5vw 0;
+                width: #{"min(35vw,16rem)"};
+            }
+        }
+    }
+    .skills {
+        &__content {
+            align-items: center;
+        }
+        &__navbar {
+            width: #{"min(100%,27rem)"};
+            & span {
+                flex: 1;
+            }
+            &--icons {
+                width: #{"min(100%,26rem)"};
+                justify-content: space-evenly;
+                & > * {
+                    margin: #{"min(3vw,.5rem)"};
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .experiencia {
+        &__components {
+            align-items: flex-start;
+        }
+        & h2 {
+            margin-bottom: 7rem;
+        }
+    }
+    .empresas {
+        &__logo {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        & img {
+            margin-bottom: 1rem;
+            width: #{"clamp(9rem,11vw,12rem)"};
+        }
+    }
+    .skills {
+        &__navbar {
+            & span {
+                padding: 0.5rem 2rem;
+            }
+            &--icons {
+                width: #{"min(80%,40rem)"};
+                justify-content: flex-start;
+                & > * {
+                    margin: 0 8% 2rem 0;
+                }
+            }
+        }
+    }
+}

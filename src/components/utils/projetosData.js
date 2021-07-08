@@ -1,9 +1,23 @@
-import PrintMusicaEmSi from "../../img/musicaemsiprint.png";
-import PrintWashome from "../../img/washome screenshot.png";
-import PrintPortfolio from "../../img/Portfolioprint.jpg";
-import React from "react";
+import PrintMusicaEmSi from "../../img/musicaemsiprint.png"
+import PrintWashome from "../../img/washome screenshot.png"
+import PrintPortfolio from "../../img/Portfolioprint.jpg"
+import PrintTerArtes from "../../img/TerArtesPrint.jpg"
+import React from "react"
 
 const projetosData = [
+  {
+    img: PrintTerArtes,
+    title: "TerArtes",
+    content: [
+      'Desenvolvimento de plataforma e-commerce para empresa de artesanato "TerArtes".',
+      <br />,
+      <br />,
+      "Redução de Custo do Cliente (Host + CMS) para 0€, através do uso de Gatsby + ContentfulCMS + Netlify.",
+    ],
+    techUsed: "GATSBY  GRAPHQL  COMMERCE.JS  SASS  JSX",
+    /* github: "https://github.com/Juan-calero/Washome", */
+    site: "https://terartes.netlify.app/",
+  },
   {
     img: PrintWashome,
     title: "Washome",
@@ -41,6 +55,6 @@ const projetosData = [
     techUsed: "React.JS  SASS",
     github: "https://github.com/Juan-calero/juan-calero.github.io",
   },
-];
+]
 
-export default projetosData;
+export default projetosData

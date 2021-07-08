@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 function Cursor() {
   return (
@@ -6,7 +6,7 @@ function Cursor() {
       <div className="cursor--center"></div>
       <div className="cursor--ring"></div>
     </aside>
-  );
+  )
 }
 
-export default Cursor;
+export default Cursor

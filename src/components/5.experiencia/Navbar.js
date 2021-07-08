@@ -1,23 +1,23 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React from "react"
+import { useEffect } from "react"
+import { useState } from "react"
 
 function Navbar() {
-  const [skill, setSkill] = useState("");
+  const [skill, setSkill] = useState("")
 
   useEffect(() => {
-    let svgs = document.querySelectorAll(`[skill="${skill}"]`);
-    svgs.forEach((e) => e.classList.add("activeSVG"));
+    let svgs = document.querySelectorAll(`[skill="${skill}"]`)
+    svgs.forEach((e) => e.classList.add("activeSVG"))
     return () => {
-      svgs.forEach((e) => e.classList.remove("activeSVG"));
-    };
-  }, [skill]);
+      svgs.forEach((e) => e.classList.remove("activeSVG"))
+    }
+  }, [skill])
   return (
     <div className="skills__navbar">
       <span
         tabIndex="0"
         onMouseEnter={() => {
-          setSkill("desen");
+          setSkill("desen")
         }}
         onMouseLeave={() => setSkill("")}
         className="skills__navbar--p"
@@ -27,7 +27,7 @@ function Navbar() {
       <span
         tabIndex="0"
         onMouseEnter={() => {
-          setSkill("design");
+          setSkill("design")
         }}
         onMouseLeave={() => setSkill("")}
         className="skills__navbar--p"
@@ -37,7 +37,7 @@ function Navbar() {
       <span
         tabIndex="0"
         onMouseEnter={() => {
-          setSkill("tools");
+          setSkill("tools")
         }}
         onMouseLeave={() => setSkill("")}
         className="skills__navbar--p"
@@ -45,10 +45,10 @@ function Navbar() {
         Ferramentas
       </span>
     </div>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
 
 /// CAN I REFACTOR THIS BETTER?
 //////////////////////////////////////////

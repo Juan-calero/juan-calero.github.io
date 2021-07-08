@@ -1,5 +1,5 @@
-import React from "react";
-import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler";
+import React from "react"
+import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler"
 
 function NavBar() {
   return (
@@ -27,7 +27,7 @@ function NavBar() {
         Contatos
       </button>
     </ul>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar

@@ -1,7 +1,7 @@
-import React from "react";
-import MyLogo from "../../img/JCLOGO.png";
-import leftSocial from "../utils/leftSocial";
-import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler";
+import React from "react"
+import MyLogo from "../../img/JCLOGO.png"
+import leftSocial from "../utils/leftSocial"
+import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler"
 
 function FixedLeft() {
   const mappedSocialIcons = leftSocial.map(({ target, href, src }, index) => {
@@ -9,8 +9,8 @@ function FixedLeft() {
       <a key={index} rel="noopener noreferrer" target={target} href={href}>
         <img src={src} alt="" />
       </a>
-    );
-  });
+    )
+  })
 
   return (
     <div className="fixed__left">
@@ -30,9 +30,9 @@ function FixedLeft() {
         </aside>
       </div>
     </div>
-  );
+  )
 }
 
-export default FixedLeft;
+export default FixedLeft
 
 /////NEEDS REFACTORING

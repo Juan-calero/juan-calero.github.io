@@ -1,11 +1,11 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
+import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithubAlt } from "@fortawesome/free-brands-svg-icons"
 import {
   faPaintBrush,
   faExternalLinkAlt,
-} from "@fortawesome/free-solid-svg-icons";
-import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler";
+} from "@fortawesome/free-solid-svg-icons"
+import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler"
 
 function ProjetoItem({ img, title, content, techUsed, site, github, mockup }) {
   return (
@@ -15,12 +15,7 @@ function ProjetoItem({ img, title, content, techUsed, site, github, mockup }) {
       </div>
       <div className="projetos__item--text">
         <h3 data-aos="fade-up">{title}</h3>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-duration="1000"
-          className="projetos__item--content"
-        >
+        <div data-aos="fade-left" className="projetos__item--content">
           <p>{content}</p>
           <div
             onMouseEnter={cursorHoverBig}
@@ -44,12 +39,10 @@ function ProjetoItem({ img, title, content, techUsed, site, github, mockup }) {
             )}
           </div>
         </div>
-        <h4 data-aos-offset="200" data-aos="fade">
-          {techUsed}
-        </h4>
+        <h4 data-aos="fade">{techUsed}</h4>
       </div>
     </div>
-  );
+  )
 }
 
-export default ProjetoItem;
+export default ProjetoItem

@@ -1,7 +1,7 @@
-import Github from "../../icons/github.png";
-import LinkedIn from "../../icons/linkedin.png";
-import Email from "../../icons/email.png";
-import Phone from "../../icons/phone-call.png";
+import Github from "../../icons/github.png"
+import LinkedIn from "../../icons/linkedin.png"
+import Email from "../../icons/email.png"
+import Phone from "../../icons/phone-call.png"
 
 const leftSocial = [
   {
@@ -22,6 +22,6 @@ const leftSocial = [
     href: "https://github.com/Juan-calero",
     src: Github,
   },
-];
+]
 
-export default leftSocial;
+export default leftSocial

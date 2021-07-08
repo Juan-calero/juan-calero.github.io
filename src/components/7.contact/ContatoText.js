@@ -1,6 +1,6 @@
-import React from "react";
-import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler";
-import { email, phone } from "../utils/utils";
+import React from "react"
+import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler"
+import { email, phone } from "../utils/utils"
 
 export default function ContatoText() {
   return (
@@ -38,7 +38,7 @@ export default function ContatoText() {
         Download Currículo
       </button>
     </div>
-  );
+  )
 }
 
 //NEEDS REFACTORING

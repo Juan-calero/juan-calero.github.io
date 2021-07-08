@@ -1,7 +1,7 @@
-import Gears from "../../icons/gears_icon.png";
-import Design from "../../icons/design_icon.png";
-import Hands from "../../icons/envolvimento_icon.png";
-import React from "react";
+import Gears from "../../icons/gears_icon.png"
+import Design from "../../icons/design_icon.png"
+import Hands from "../../icons/envolvimento_icon.png"
+import React from "react"
 
 const oQueFacoData = [
   {
@@ -25,5 +25,5 @@ const oQueFacoData = [
       "Procuro atender às necessidades do cliente e colaboro com a equipa de forma a potenciar o trabalho e gerar resultados.",
     src: Hands,
   },
-];
-export default oQueFacoData;
+]
+export default oQueFacoData

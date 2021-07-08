@@ -1,5 +1,5 @@
-import Washome from "../../icons/washomeLogoWhite.png";
-import MusicaEmSi from "../../icons/Musica em sí logo faces.png";
+import Washome from "../../icons/washomeLogoWhite.png"
+import MusicaEmSi from "../../icons/Musica em sí logo faces.png"
 
 export const matrixArr = [
   "APASV",
@@ -18,7 +18,7 @@ export const matrixArr = [
   "NPAU8X",
   "OLZQI",
   "P7X9",
-];
+]
 
 export const sectionsArr = [
   "início",
@@ -27,9 +27,9 @@ export const sectionsArr = [
   "experiência",
   "projetos",
   "contato",
-];
-export const email = "hello.juancalero@gmail.com";
-export const phone = "915019341";
+]
+export const email = "hello.juancalero@gmail.com"
+export const phone = "915019341"
 
 export const empresas = [
   {
@@ -40,4 +40,8 @@ export const empresas = [
     src: MusicaEmSi,
     name: "Música em Si",
   },
-];
+  {
+    src: MusicaEmSi,
+    name: "TerArtes",
+  },
+]
