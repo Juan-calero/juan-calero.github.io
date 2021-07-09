@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 
 function Navbar() {
-  const [skill, setSkill] = useState("")
+  const [skill, setSkill] = useState(0)
 
   useEffect(() => {
     let svgs = document.querySelectorAll(`[skill="${skill}"]`)
@@ -14,36 +14,33 @@ function Navbar() {
   }, [skill])
   return (
     <div className="skills__navbar">
-      <span
+      <button
         tabIndex="0"
-        onMouseEnter={() => {
-          setSkill("desen")
+        onClick={() => {
+          setSkill(0)
         }}
-        onMouseLeave={() => setSkill("")}
-        className="skills__navbar--p"
+        className={!skill ? "skills__active" : "skills__navbar--p"}
       >
         Código
-      </span>
-      <span
+      </button>
+      <button
         tabIndex="0"
-        onMouseEnter={() => {
-          setSkill("design")
+        onClick={() => {
+          setSkill(1)
         }}
-        onMouseLeave={() => setSkill("")}
-        className="skills__navbar--p"
+        className={skill === 1 ? "skills__active" : "skills__navbar--p"}
       >
         Design
-      </span>
-      <span
+      </button>
+      <button
         tabIndex="0"
-        onMouseEnter={() => {
-          setSkill("tools")
+        onClick={() => {
+          setSkill(2)
         }}
-        onMouseLeave={() => setSkill("")}
-        className="skills__navbar--p"
+        className={skill === 2 ? "skills__active" : "skills__navbar--p"}
       >
         Ferramentas
-      </span>
+      </button>
     </div>
   )
 }
