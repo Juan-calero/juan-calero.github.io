@@ -22,6 +22,7 @@ function FixedRight() {
       sectionTop < 400 && sectionTop >= 400 - section.scrollHeight
         ? dot.classList.add("active")
         : dot.classList.remove("active")
+      return null
     })
   }
 

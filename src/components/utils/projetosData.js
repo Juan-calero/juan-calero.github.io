@@ -14,7 +14,7 @@ const projetosData = [
       <br />,
       "Redução de Custo do Cliente (Host + CMS) para 0€, através do uso de Gatsby + ContentfulCMS + Netlify.",
     ],
-    techUsed: "GATSBY  GRAPHQL  COMMERCE.JS  SASS  JSX",
+    techUsed: "GATSBY, GRAPHQL, COMMERCE.JS, SASS, JSX",
     /* github: "https://github.com/Juan-calero/Washome", */
     site: "https://terartes.netlify.app/",
   },
@@ -27,7 +27,7 @@ const projetosData = [
       <br />,
       "Inclui página de Detalhes, Formulário e Testemunhos em Carousel.",
     ],
-    techUsed: "HTML  SASS  JAVASCRIPT  ADOBE XD  ADOBE DIMENSION",
+    techUsed: "HTML, SaSS, JaVaSCRIPT, aDOBE XD, aDOBE DIMENSION",
     github: "https://github.com/Juan-calero/Washome",
     site: "http://www.washome.pt/",
   },
@@ -40,7 +40,7 @@ const projetosData = [
       <br />,
       " Inclui landing pages, página de preçário e formulário multi-step.",
     ],
-    techUsed: "Wix Corvid",
+    techUsed: "Wix, Corvid",
     site: "https://www.musicaemsi.com/",
   },
   {
@@ -52,7 +52,7 @@ const projetosData = [
       <br />,
       "Layout Responsivo e Suporte Web Mobile",
     ],
-    techUsed: "React.JS  SASS",
+    techUsed: "React.JS, SaSS",
     github: "https://github.com/Juan-calero/juan-calero.github.io",
   },
 ]

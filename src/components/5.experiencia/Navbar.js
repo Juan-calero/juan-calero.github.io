@@ -22,7 +22,7 @@ function Navbar() {
         onMouseLeave={() => setSkill("")}
         className="skills__navbar--p"
       >
-        Desenvolvimento
+        Código
       </span>
       <span
         tabIndex="0"

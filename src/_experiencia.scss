@@ -9,7 +9,7 @@
     & h3 {
         color: $lightGrey;
         text-shadow: none;
-        margin-bottom: 3rem;
+        //   margin-bottom: 3rem;
     }
 }
 .empresas {
@@ -29,29 +29,38 @@
     &__content {
         display: flex;
         flex-direction: column;
+        align-items: center;
         height: 20rem;
     }
     &__navbar {
         display: flex;
         margin-bottom: 2.7rem;
+        border: 1px solid $lightGrey;
+        border-radius: 50px;
+        box-shadow: 0px 0px 20px rgba($color: #fff, $alpha: 0.1);
         & span {
             height: 2rem;
             display: flex;
             justify-content: center;
             align-items: center;
             color: $lightGrey;
-            border-bottom: 2px solid $lightGrey;
             background: linear-gradient(transparent, $medGrey 200%);
+            border-left: 1px solid $lightGrey;
+            border-right: 1px solid $lightGrey;
+            &:first-child {
+                border-radius: 50px 0 0 50px;
+            }
+            &:last-child {
+                border-radius: 0 50px 50px 0;
+            }
             &:hover {
                 text-shadow: $neon;
                 color: white;
-                border-bottom: 2px solid white;
                 background: linear-gradient(transparent, $lightBlue 200%);
             }
         }
         &--icons {
             fill: $lightGrey;
-            font-size: 3rem;
             display: flex;
             flex-wrap: wrap;
         }
@@ -64,32 +73,46 @@
             flex-direction: column;
         }
         & h2 {
-            margin-bottom: 12rem;
+            margin-top: 30vh;
+            //   margin-bottom: 12rem;
         }
     }
     .empresas {
         &__logo {
-            margin-bottom: 13rem;
+            margin-bottom: 10rem;
             & img {
-                margin: 5vw 0;
+                margin: #{"min(2vw,1.5rem)"} 0;
                 width: #{"min(35vw,16rem)"};
             }
         }
     }
     .skills {
+        margin-bottom: 30vh;
         &__content {
             align-items: center;
         }
         &__navbar {
-            width: #{"min(100%,27rem)"};
+            width: #{"min(90%,27rem)"};
+            border: 1px solid $lightGrey;
+            border-radius: 50px;
             & span {
                 flex: 1;
+                border-left: 1px solid $lightGrey;
+                border-right: 1px solid $lightGrey;
+
+                &:first-child {
+                    border-radius: 50px 0 0 50px;
+                }
+                &:last-child {
+                    border-radius: 0 50px 50px 0;
+                }
             }
             &--icons {
-                width: #{"min(100%,26rem)"};
-                justify-content: space-evenly;
+                width: #{"min(100%,37rem)"};
+                justify-content: center;
+                font-size: #{"clamp(2rem,12vw,4.2rem)"};
                 & > * {
-                    margin: #{"min(3vw,.5rem)"};
+                    margin: #{"min(2vw,1rem)"};
                 }
             }
         }
@@ -120,10 +143,15 @@
         &__navbar {
             & span {
                 padding: 0.5rem 2rem;
+                border-bottom: 2px solid $lightGrey;
+                &:hover {
+                    border-bottom: 2px solid white;
+                }
             }
             &--icons {
                 width: #{"min(80%,40rem)"};
                 justify-content: flex-start;
+                font-size: 3rem;
                 & > * {
                     margin: 0 8% 2rem 0;
                 }

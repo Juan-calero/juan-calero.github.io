@@ -2,17 +2,16 @@
     background: linear-gradient(transparent, $darkBlue);
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
-.contatos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
+.contatoContent {
+    white-space: pre-line;
+    width: #{"min(80%, 60ch)"};
+    margin: auto;
+    //  background-color: red;
+
     &__text {
-        white-space: pre-line;
-        width: #{"min(90%, 60ch)"};
         & a {
             margin-right: 2rem;
             color: $lightGrey;
@@ -24,59 +23,64 @@
     }
 }
 .matrix {
-    flex: 1;
-    background-color: blue;
+    margin: 0 auto;
+    //background-color: blue;
     position: relative;
-    margin: 0;
-    height: 30rem;
+    max-width: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
     & > img {
-        background-color: red;
         object-fit: cover;
-        height: 20rem;
-        width: 20rem;
+        height: 100%;
+        width: 100%;
+        max-height: 20rem;
+        max-width: 20rem;
     }
     &__box {
         position: absolute;
-        //  width: 100%;
-        // height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    &__line {
-        background-color: red;
-        //width: 4rem;
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-        position: relative;
-        // margin: 0 #{"min(4vw, 1.4rem)"};
-        opacity: 0.2;
-        z-index: -1;
-        font-size: 3rem;
-        font-family: "Glipervelz Regular";
-        text-shadow: $neon;
-        margin: 0;
+        &--line {
+            font-family: "Glipervelz Regular";
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            text-shadow: $neon;
+
+            position: relative;
+            z-index: 0;
+            opacity: 0.1;
+            font-size: #{"min(12vw,3rem)"};
+            line-height: #{"min(17vw,4rem)"};
+            margin: 0;
+        }
     }
 }
 @media screen and (max-width: 1200px) {
     .contato {
         flex-direction: column;
     }
-    .matrix {
-        /*         &__box {
-            height: 20rem;
-        } */
-        &__line {
-            font-size: 2.4rem;
-            line-height: auto;
+    .contatoContent {
+        // flex: 1;
+        margin: auto;
+        width: #{"min(85%, 60ch)"};
+        &__text {
+            & p {
+                width: 100%;
+            }
+            &--anchor {
+                display: block;
+            }
         }
+    }
+    .matrix {
+        //flex: 1;
+        margin: auto;
     }
 }
 @media screen and (min-width: 1201px) {
-    .contatos {
+    .contatoContent {
         &__text {
             & a:hover,
             & a:focus {

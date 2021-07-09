@@ -6,21 +6,23 @@ import Navbar from "./Navbar"
 function Experiencia() {
   const map = empresas.map(({ name, src }, index) => {
     return (
-      <li>
-        <img key={index} src={src} alt={`Logo ${name}`} />
+      <li key={index}>
+        <img src={src} alt={`Logo ${name}`} />
       </li>
     )
   })
 
   return (
     <section id="experiência" className="experiencia">
-      <h2 data-aos="fade">Experiência</h2>
+      <h2 data-aos-offset="80" data-aos="fade">
+        Experiência
+      </h2>
       <div className="experiencia__components">
-        <article data-aos="fade-up" className="empresas">
+        <article data-aos-offset="80" data-aos="fade-up" className="empresas">
           <h3>empresas</h3>
           <ul className="empresas__logo">{map}</ul>
         </article>
-        <article data-aos="fade" className="skills">
+        <article data-aos-offset="80" data-aos="fade" className="skills">
           <h3>skills</h3>
           <div className="skills__content">
             <Navbar />

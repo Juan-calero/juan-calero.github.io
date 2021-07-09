@@ -1,10 +1,12 @@
 import React from "react"
 import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler"
 import { email, phone } from "../utils/utils"
+import curriculo from "../../CV/PORTUGUESE CV.pdf"
 
 export default function ContatoText() {
   return (
-    <div className="contatos__text">
+    <div className="contatoContent">
+      <h2>Contactos</h2>
       <p>
         {`Captei o seu interesse?
 
@@ -16,6 +18,7 @@ export default function ContatoText() {
        
         `}
         <a
+          className="contatoContent__text--anchor"
           onMouseEnter={cursorHoverBig}
           onMouseLeave={cursorHoverSmall}
           href={`tel:+351${phone}`}
@@ -23,6 +26,7 @@ export default function ContatoText() {
           +351 {phone}
         </a>
         <a
+          className="contatoContent__text--anchor"
           onMouseEnter={cursorHoverBig}
           onMouseLeave={cursorHoverSmall}
           href={`mailto:${email}`}
@@ -30,16 +34,15 @@ export default function ContatoText() {
           {email}
         </a>
       </p>
-      <button
-        onMouseEnter={cursorHoverBig}
-        onMouseLeave={cursorHoverSmall}
-        className="btn"
-      >
-        Download Currículo
-      </button>
+      <a href={curriculo} download="Juan Calero Curriculo.pdf">
+        <button
+          onMouseEnter={cursorHoverBig}
+          onMouseLeave={cursorHoverSmall}
+          className="btn"
+        >
+          Download Currículo
+        </button>
+      </a>
     </div>
   )
 }
-
-//NEEDS REFACTORING
-///////////

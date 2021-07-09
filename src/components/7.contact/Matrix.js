@@ -2,23 +2,25 @@ import React, { useEffect, useState } from "react"
 import { matrixArr } from "../utils/utils"
 
 function Matrix() {
-  const [codeLine, setCodeLine] = useState(null)
+  const [codeLine, setCodeLine] = useState([])
+  let count = 0
 
   const matrixInterval = () => {
-    setCodeLine(() => {
-      const count = matrixArr[Math.floor(Math.random() * matrixArr.length)]
-      return <p className="matrix__line">{count}</p>
-    })
+    setCodeLine(matrixArr[count % 4])
+    count++
   }
-
+  const map = codeLine.map((e, index) => {
+    return (
+      <p key={index} className="matrix__box--line">
+        {e}
+      </p>
+    )
+  })
   useEffect(() => {
     setInterval(matrixInterval, 350)
-    return () => {
-      clearInterval(matrixInterval, 350)
-    }
   }, [])
 
-  return <React.Fragment>{codeLine}</React.Fragment>
+  return <div className="matrix__box">{map}</div>
 }
 
 export default Matrix
