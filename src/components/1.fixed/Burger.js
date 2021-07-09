@@ -4,7 +4,7 @@ import { sectionsArr } from "../utils/utils"
 
 function Burger() {
   const [isToggled, setIsToggled] = useState(false)
-  const { width } = useViewPort()
+  const { width } = useViewPort(isToggled)
   const navItems = sectionsArr.map((e, index) => {
     return (
       <a className="burger__nav--item" key={index} href={`#${e}`}>
@@ -13,16 +13,16 @@ function Burger() {
     )
   })
   useEffect(() => {
-    const some = document.querySelector(".left__social").style
-    some.visibility = !isToggled && width < 1200 ? "hidden" : "visible"
-    some.transition = !isToggled && width < 1200 ? "all 0s" : "all 4s"
-    some.opacity = !isToggled && width < 1200 ? "0" : "1"
+    const { style } = document.querySelector(".left__social")
+    style.visibility = !isToggled && width < 1200 ? "hidden" : "visible"
+    style.transition = !isToggled && width < 1200 ? "all 0s" : "all 4s"
+    style.opacity = !isToggled && width < 1200 ? "0" : "1"
   }, [width, isToggled])
 
   return (
     <div
       onClick={() => setIsToggled(!isToggled)}
-      className={"burger__bg" + (isToggled ? " burger__active" : "")}
+      className={`burger__bg ${isToggled && " burger__active"}`}
     >
       <aside className="burger__icon">
         <div className="burger__icon--line"></div>
@@ -39,6 +39,3 @@ function Burger() {
 }
 
 export default Burger
-
-//SOLVED BUT VERBOSE!
-/////////////////////

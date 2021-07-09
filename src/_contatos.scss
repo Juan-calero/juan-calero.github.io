@@ -9,7 +9,6 @@
     white-space: pre-line;
     width: #{"min(80%, 60ch)"};
     margin: auto;
-    //  background-color: red;
 
     &__text {
         & a {
@@ -24,7 +23,6 @@
 }
 .matrix {
     margin: 0 auto;
-    //background-color: blue;
     position: relative;
     max-width: 30rem;
     display: flex;
@@ -62,7 +60,6 @@
         flex-direction: column;
     }
     .contatoContent {
-        // flex: 1;
         margin: auto;
         width: #{"min(85%, 60ch)"};
         &__text {
@@ -75,7 +72,6 @@
         }
     }
     .matrix {
-        //flex: 1;
         margin: auto;
     }
 }

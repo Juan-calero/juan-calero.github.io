@@ -16,6 +16,3 @@ function Contact() {
 }
 
 export default Contact
-
-//NEEDS REFACTORING
-///////////

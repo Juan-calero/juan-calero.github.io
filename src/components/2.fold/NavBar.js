@@ -3,7 +3,7 @@ import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler"
 
 function NavBar() {
   return (
-    <ul
+    <ol
       className="fold__navbar"
       onMouseEnter={cursorHoverBig}
       onMouseLeave={cursorHoverSmall}
@@ -26,7 +26,7 @@ function NavBar() {
       >
         Contatos
       </button>
-    </ul>
+    </ol>
   )
 }
 

@@ -40,7 +40,8 @@ section {
     min-height: 100vh;
 }
 
-ul {
+ul,
+ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -76,9 +77,6 @@ a {
     color: white;
 }
 
-///////////////////////////////////
-//////////////MOBILE//////////////
-
 @media screen and (max-width: 1200px) {
     h1 {
         font-size: #{"min(4.3vw, 2.8rem)"};
@@ -94,9 +92,6 @@ a {
         line-height: 1.5em;
     }
 }
-
-///////////////////////////////////
-//////////////LAPTOP//////////////
 
 @media screen and (min-width: 1201px) {
     *,

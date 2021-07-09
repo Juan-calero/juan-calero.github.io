@@ -51,6 +51,3 @@ function FixedRight() {
 }
 
 export default FixedRight
-
-///////////////////////////////
-//NEEDS REFACTORING

@@ -1,31 +1,18 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons"
-import {
-  faPaintBrush,
-  faExternalLinkAlt,
-} from "@fortawesome/free-solid-svg-icons"
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler"
 
-function ProjetoItem({ img, title, content, techUsed, site, github, mockup }) {
+function ProjetoItem({ img, title, content, techUsed, site, github }) {
   return (
     <div className="projetos__item">
-      <div
-        data-aos-offset="80"
-        data-aos="flip-up"
-        className="projetos__item--img"
-      >
-        <img src={img} alt="" />
+      <div data-aos="flip-up" className="projetos__item--img">
+        <img src={img} alt={title} />
       </div>
       <div className="projetos__item--text">
-        <h3 data-aos-offset="80" data-aos="fade-up">
-          {title.toLowerCase()}
-        </h3>
-        <div
-          data-aos-offset="80"
-          data-aos="fade-left"
-          className="projetos__item--content"
-        >
+        <h3 data-aos="fade-up">{title.toLowerCase()}</h3>
+        <div data-aos="fade-left" className="projetos__item--content">
           <p>{content}</p>
           <div
             onMouseEnter={cursorHoverBig}
@@ -33,25 +20,25 @@ function ProjetoItem({ img, title, content, techUsed, site, github, mockup }) {
             className="projetos__item--icons"
           >
             {site && (
-              <a rel="noreferrer" target="_blank" href={site}>
-                <FontAwesomeIcon icon={faExternalLinkAlt} />
+              <a rel="noopener noreferrer" target="_blank" href={site}>
+                <FontAwesomeIcon
+                  aria-label="website"
+                  icon={faExternalLinkAlt}
+                />
               </a>
             )}
             {github && (
-              <a rel="noreferrer" target="_blank" href={github}>
-                <FontAwesomeIcon icon={faGithubAlt} size="lg" />
-              </a>
-            )}
-            {mockup && (
-              <a rel="noreferrer" target="_blank" href={mockup}>
-                <FontAwesomeIcon icon={faPaintBrush} size="lg" />
+              <a rel="noopener noreferrer" target="_blank" href={github}>
+                <FontAwesomeIcon
+                  aria-label="github"
+                  icon={faGithubAlt}
+                  size="lg"
+                />
               </a>
             )}
           </div>
         </div>
-        <h4 data-aos-offset="80" data-aos="fade">
-          {techUsed.toLowerCase()}
-        </h4>
+        <h4 data-aos="fade">{techUsed.toLowerCase()}</h4>
       </div>
     </div>
   )

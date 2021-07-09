@@ -6,7 +6,7 @@ import JCFace from "../../img/jcface.jpg"
 function Fold() {
   return (
     <section className="fold" id="início">
-      <img id="myface" src={JCFace} alt="" />
+      <img id="myface" src={JCFace} alt="Foto do Autor" />
       <NavBar />
       <Center />
     </section>

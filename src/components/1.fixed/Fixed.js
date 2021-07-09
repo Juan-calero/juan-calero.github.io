@@ -15,5 +15,3 @@ function Fixed() {
 }
 
 export default Fixed
-
-//NEEDS REFACTORING

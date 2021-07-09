@@ -12,19 +12,23 @@ import Cursor from "./components/utils/Cursor"
 import React from "react"
 
 function App() {
-  AOS.init({ duration: 1000, offset: 340 })
+  AOS.init({ duration: 1000, offset: 200 })
+
+  function handleMouse(e) {
+    const { style } = document.querySelector(".cursor--center")
+    style.left = `${e.pageX}px`
+    style.top = `${e.pageY}px`
+    setTimeout(() => {
+      const { style } = document.querySelector(".cursor--ring")
+      style.left = `${e.pageX}px`
+      style.top = `${e.pageY}px`
+    }, 20)
+  }
+
   return (
     <div
-      className="App"
       onMouseMove={(e) => {
-        const cursor = document.querySelector(".cursor--center")
-        cursor.style.left = `${e.pageX}px`
-        cursor.style.top = `${e.pageY}px`
-        setTimeout(() => {
-          const ring = document.querySelector(".cursor--ring")
-          ring.style.left = `${e.pageX}px`
-          ring.style.top = `${e.pageY}px`
-        }, 20)
+        handleMouse(e)
       }}
     >
       <Cursor />

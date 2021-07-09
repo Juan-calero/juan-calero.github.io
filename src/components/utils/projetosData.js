@@ -15,7 +15,6 @@ const projetosData = [
       "Redução de Custo do Cliente (Host + CMS) para 0€, através do uso de Gatsby + ContentfulCMS + Netlify.",
     ],
     techUsed: "GATSBY, GRAPHQL, COMMERCE.JS, SASS, JSX",
-    /* github: "https://github.com/Juan-calero/Washome", */
     site: "https://terartes.netlify.app/",
   },
   {

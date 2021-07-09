@@ -3,14 +3,14 @@ import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler"
 
 function Center() {
   const enterMyFace = (e) => {
-    const image = document.getElementById("myface")
-    image.style.top = `${e.pageY}px`
-    image.style.left = `${e.pageX}px`
-    image.style.display = "block"
+    const { style } = document.getElementById("myface")
+    style.top = `${e.pageY}px`
+    style.left = `${e.pageX}px`
+    style.display = "block"
   }
   const leaveMyFace = () => {
-    const image = document.getElementById("myface")
-    image.style.display = "none"
+    const { style } = document.getElementById("myface")
+    style.display = "none"
   }
   return (
     <div className="fold__center">
@@ -38,5 +38,3 @@ function Center() {
 }
 
 export default Center
-
-/////NEEDS REFACTORING
