@@ -129,7 +129,8 @@
     }
     .skills {
         &__navbar {
-            & button:hover {
+            & button:hover,
+            & button:focus {
                 text-shadow: $neon;
                 color: white;
             }

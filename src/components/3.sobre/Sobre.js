@@ -5,7 +5,7 @@ import SobreTitle from "./SobreTitle"
 function Sobre() {
   return (
     <section id="sobre" className="sobre">
-      <img data-aos="fade" src={Brain} alt="Cérebro Neon" />
+      <img data-aos="fade" src={Brain} alt="Cérebro Neon" loading="lazy" />
       <SobreTitle />
       <p data-aos="fade" data-aos-offset="140">
         Programador Front-end energético com mais de{" "}

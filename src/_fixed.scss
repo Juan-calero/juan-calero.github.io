@@ -107,6 +107,9 @@
         display: none;
     }
     .fixed {
+        &__right--dot {
+            display: none;
+        }
         &__social {
             left: 8vw;
         }
@@ -123,7 +126,6 @@
         }
     }
 }
-
 @media screen and (min-width: 1201px) {
     .burger__bg {
         display: none;
@@ -185,13 +187,15 @@
             right: 5%;
             height: 100%;
             &--dot {
+                border: none;
                 margin: 7px 0;
                 opacity: 0.8;
                 background: radial-gradient($lightGrey, transparent 40%);
                 border-radius: 50%;
                 height: 14px;
                 width: 14px;
-                &:hover:not(.active) {
+                &:hover:not(.active),
+                &:focus:not(.active) {
                     background: radial-gradient(white 40%, transparent 50%);
                 }
             }

@@ -8,7 +8,7 @@ function ProjetoItem({ img, title, content, techUsed, site, github }) {
   return (
     <div className="projetos__item">
       <div data-aos="flip-up" className="projetos__item--img">
-        <img src={img} alt={title} />
+        <img src={img} alt="" loading="lazy" />
       </div>
       <div className="projetos__item--text">
         <h3 data-aos="fade-up">{title.toLowerCase()}</h3>

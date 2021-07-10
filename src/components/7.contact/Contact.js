@@ -8,7 +8,7 @@ function Contact() {
     <section className="contato" id="contato">
       <ContatoText />
       <div className="matrix">
-        <img src={JCLogo} alt="JC Logo" />
+        <img src={JCLogo} alt="JC Logo" loading="lazy" />
         <Matrix />
       </div>
     </section>

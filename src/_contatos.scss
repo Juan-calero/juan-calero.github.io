@@ -11,13 +11,15 @@
     margin: auto;
 
     &__text {
-        & a {
-            margin-right: 2rem;
-            color: $lightGrey;
-            display: inline-block;
-        }
         & button {
             padding: 1rem;
+        }
+        &--anchor {
+            display: block;
+            &:hover,
+            &:focus {
+                color: $lightGrey;
+            }
         }
     }
 }
@@ -65,9 +67,6 @@
         &__text {
             & p {
                 width: 100%;
-            }
-            &--anchor {
-                display: block;
             }
         }
     }

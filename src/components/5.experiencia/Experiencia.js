@@ -7,7 +7,7 @@ function Experiencia() {
   const map = empresas.map(({ name, src }, index) => {
     return (
       <li key={index}>
-        <img src={src} alt={`Logo ${name}`} />
+        <img src={src} alt={`Logo ${name}`} loading="lazy" />
       </li>
     )
   })

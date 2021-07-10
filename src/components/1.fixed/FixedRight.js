@@ -28,15 +28,16 @@ function FixedRight() {
 
   const mapped = sectionsArr.map((e, index) => {
     return (
-      <div
+      <button
         key={index}
         dot={e}
+        tabIndex="0"
         onClick={() => {
           setName(e)
           window.location.replace(`/#${e}`)
         }}
         className={"fixed__right--dot" + (name === e ? " active" : "")}
-      ></div>
+      ></button>
     )
   })
   return (
