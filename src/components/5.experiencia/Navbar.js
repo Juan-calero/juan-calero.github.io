@@ -1,17 +1,6 @@
 import React from "react"
-import { useEffect } from "react"
-import { useState } from "react"
 
-function Navbar() {
-  const [skill, setSkill] = useState(0)
-
-  useEffect(() => {
-    let svgs = document.querySelectorAll(`[skill="${skill}"]`)
-    svgs.forEach((e) => e.classList.add("activeSVG"))
-    return () => {
-      svgs.forEach((e) => e.classList.remove("activeSVG"))
-    }
-  }, [skill])
+function Navbar({ setSkill, skill }) {
   return (
     <div className="skills__navbar">
       <button

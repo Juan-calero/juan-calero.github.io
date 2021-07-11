@@ -48,12 +48,13 @@
         }
         &__item {
             flex-direction: column;
+            width: #{"min(100%, 60ch)"};
+            margin: auto;
             & img {
-                margin-bottom: #{"min(-3rem,-10vw)"};
+                margin-bottom: -4rem;
             }
             & p {
-                background-color: purple;
-                width: #{"min(100%, 50ch)"};
+                width: 100%;
             }
             &--text {
                 display: flex;

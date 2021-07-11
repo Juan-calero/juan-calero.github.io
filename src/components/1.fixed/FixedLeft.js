@@ -5,10 +5,12 @@ import { cursorHoverBig, cursorHoverSmall } from "../utils/CursorHoverHandler"
 
 function FixedLeft() {
   const mappedSocialIcons = leftSocial.map(
-    ({ name, target, href, src }, index) => {
+    ({ target, href, viewBox, d }, index) => {
       return (
         <a key={index} rel="noopener noreferrer" target={target} href={href}>
-          <img src={src} alt={name} />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox={viewBox}>
+            <path d={d} />
+          </svg>
         </a>
       )
     }

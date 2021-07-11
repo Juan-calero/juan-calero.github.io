@@ -34,7 +34,7 @@ export default function ContatoText() {
           {email}
         </a>
       </p>
-      <a tabindex="-1" href={curriculo} download="Juan Calero Curriculo.pdf">
+      <a tabIndex="-1" href={curriculo} download="Juan Calero Curriculo.pdf">
         <button
           onMouseEnter={cursorHoverBig}
           onMouseLeave={cursorHoverSmall}

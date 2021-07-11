@@ -1,16 +1,17 @@
 import React from "react"
 import ContatoText from "./ContatoText"
-import Matrix from "./Matrix"
-import JCLogo from "../../img/JCLOGO.png"
+import JCLogo from "../../img/JCLOGO.webp"
 
 function Contact() {
   return (
     <section className="contato" id="contato">
       <ContatoText />
-      <div className="matrix">
-        <img src={JCLogo} alt="JC Logo" loading="lazy" />
-        <Matrix />
-      </div>
+      <img
+        className="matrix"
+        src={JCLogo}
+        alt="JC Logo with Matrix Effect"
+        loading="lazy"
+      />
     </section>
   )
 }

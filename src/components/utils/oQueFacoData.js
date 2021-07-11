@@ -1,6 +1,6 @@
-import Gears from "../../icons/gears_icon.png"
-import Design from "../../icons/design_icon.png"
-import Hands from "../../icons/envolvimento_icon.png"
+import Gears from "../../icons/gears_icon.webp"
+import Design from "../../icons/design_icon.webp"
+import Hands from "../../icons/envolvimento_icon.webp"
 import React from "react"
 
 const oQueFacoData = [

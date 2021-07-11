@@ -1,5 +1,5 @@
 import React from "react"
-import Brain from "../../icons/brain_neon.png"
+import Brain from "../../icons/brain_neon.webp"
 import SobreTitle from "./SobreTitle"
 
 function Sobre() {

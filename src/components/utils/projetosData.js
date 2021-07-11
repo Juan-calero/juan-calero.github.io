@@ -1,5 +1,5 @@
-import PrintMusicaEmSi from "../../img/musicaemsiprint.png"
-import PrintWashome from "../../img/washome screenshot.png"
+import PrintMusicaEmSi from "../../img/musicaemsiprint.webp"
+import PrintWashome from "../../img/washome screenshot.webp"
 import PrintPortfolio from "../../img/Portfolioprint.jpg"
 import PrintTerArtes from "../../img/TerArtesPrint.jpg"
 import React from "react"

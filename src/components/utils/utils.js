@@ -1,12 +1,12 @@
 import Washome from "../../icons/washomeLogoWhite.png"
 import MusicaEmSi from "../../icons/Musica em sí logo faces.png"
 
-export const matrixArr = [
+/* export const matrixArr = [
   ["APASV", "BQCXRT", "CVARG", "DPOI", "EOXUTR"],
   ["EOXUTR", "FCMTI", "GUX7", "HAXWER", "BQCXRT"],
   ["I3CU", "JZUVQN", "KVM7N", "LZ4B", "NPAU8X"],
   ["MIXUA", "NPAU8X", "OLZQI", "P7X9", "JZUVQN"],
-]
+] */
 
 export const sectionsArr = [
   "início",

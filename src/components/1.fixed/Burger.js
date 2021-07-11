@@ -4,7 +4,7 @@ import { sectionsArr } from "../utils/utils"
 
 function Burger() {
   const [isToggled, setIsToggled] = useState(false)
-  const { width } = useViewPort(isToggled)
+  const { width } = useViewPort()
   const navItems = sectionsArr.map((e, index) => {
     return (
       <a className="burger__nav--item" key={index} href={`#${e}`}>

@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import { empresas } from "../utils/utils"
 import Ferramentas from "./Ferramentas"
 import Navbar from "./Navbar"
 
 function Experiencia() {
+  const [skill, setSkill] = useState(0)
   const map = empresas.map(({ name, src }, index) => {
     return (
       <li key={index}>
@@ -23,8 +24,8 @@ function Experiencia() {
         <article data-aos="fade" className="skills">
           <h3>skills</h3>
           <div className="skills__content">
-            <Navbar />
-            <Ferramentas />
+            <Navbar setSkill={setSkill} skill={skill} />
+            <Ferramentas skill={skill} />
           </div>
         </article>
       </div>
