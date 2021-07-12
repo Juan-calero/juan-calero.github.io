@@ -9,7 +9,6 @@
     white-space: pre-line;
     width: #{"min(80%, 60ch)"};
     margin: auto;
-
     &__text {
         & button {
             padding: 1rem;
@@ -21,12 +20,25 @@
                 color: $lightGrey;
             }
         }
+        &__text {
+            & p {
+                width: 100%;
+            }
+        }
     }
 }
 .matrix {
     margin: auto;
     width: #{"min(500px,100%)"};
     height: #{"min(500px,100%)"};
+}
+.coffeeNLove {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    font-size: #{"min(3vw, .8rem)"};
+    text-align: center;
 }
 @media screen and (max-width: 1200px) {
     .contato {
@@ -35,11 +47,9 @@
     .contatoContent {
         margin: auto;
         width: #{"min(85%, 60ch)"};
-        &__text {
-            & p {
-                width: 100%;
-            }
-        }
+    }
+    .matrix {
+        margin-bottom: 2rem;
     }
 }
 @media screen and (min-width: 1201px) {

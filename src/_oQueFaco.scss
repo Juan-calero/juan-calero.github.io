@@ -11,7 +11,7 @@
         & img {
             margin-right: -30rem;
             width: #{"clamp(55rem,70vw,75rem)"};
-            animation: gear-spin 40s linear 0s infinite;
+            animation: gear-spin 3s linear infinite;
         }
     }
     &__items {
@@ -38,7 +38,7 @@
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(30deg);
     }
 }
 @media screen and (max-width: 1200px) {
@@ -60,6 +60,13 @@
                 display: flex;
                 flex-direction: column;
             }
+        }
+    }
+}
+@media screen and (min-width: 1201px) {
+    .oQueFaco {
+        & h2 {
+            margin-left: 2rem;
         }
     }
 }

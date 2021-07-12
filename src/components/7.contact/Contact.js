@@ -12,6 +12,17 @@ function Contact() {
         alt="JC Logo with Matrix Effect"
         loading="lazy"
       />
+      <p className="coffeeNLove">
+        Created with{" "}
+        <span aria-label="love" role="img">
+          💙
+        </span>{" "}
+        and{" "}
+        <span aria-label="coffee" role="img">
+          ☕
+        </span>
+        . Powered By React.
+      </p>
     </section>
   )
 }

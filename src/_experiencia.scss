@@ -39,6 +39,7 @@
         border: 1px solid $lightGrey;
         width: #{"min(90%,27rem)"};
         & button {
+            font-size: 0.8rem;
             flex: 1;
             height: 2rem;
             display: flex;
@@ -114,6 +115,7 @@
         }
         & h2 {
             margin-bottom: 7rem;
+            text-align: center;
         }
     }
     .empresas {
@@ -128,6 +130,7 @@
         }
     }
     .skills {
+        margin-right: 4rem;
         &__navbar {
             & button:hover,
             & button:focus {
@@ -135,11 +138,11 @@
                 color: white;
             }
             &--icons {
-                width: #{"min(80%,40rem)"};
-                justify-content: flex-start;
+                width: 25rem;
+                justify-content: center;
                 font-size: 3rem;
                 & > * {
-                    margin: 0 8% 2rem 0;
+                    margin: 0 1.5rem 2rem;
                 }
             }
         }

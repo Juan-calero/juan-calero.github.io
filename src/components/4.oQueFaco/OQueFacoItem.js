@@ -6,7 +6,7 @@ function OQueFacoItem({ title, content, src }) {
       <img className="oQueFaco__item--img" src={src} alt="" loading="lazy" />
       <div className="oQueFaco__item--text">
         <h3>{title}</h3>
-        <p>{content}</p>
+        {content}
       </div>
     </div>
   )

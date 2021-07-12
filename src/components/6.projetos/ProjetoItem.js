@@ -18,40 +18,42 @@ function ProjetoItem({ img, title, content, techUsed, site, github }) {
       </a>
       <div data-aos="fade" className="projetos__item--text">
         <h3>{title.toLowerCase()}</h3>
-        <div className="projetos__item--content">
-          <p>{content}</p>
-          <div className="projetos__item--icons">
-            {site && (
-              <a
-                onMouseEnter={cursorHoverBig}
-                onMouseLeave={cursorHoverSmall}
-                rel="noopener noreferrer"
-                target="_blank"
-                href={site}
-              >
-                <FontAwesomeIcon
-                  aria-label="website"
-                  icon={faExternalLinkAlt}
-                />
-              </a>
-            )}
-            {github && (
-              <a
-                onMouseEnter={cursorHoverBig}
-                onMouseLeave={cursorHoverSmall}
-                rel="noopener noreferrer"
-                target="_blank"
-                href={github}
-              >
-                <FontAwesomeIcon
-                  aria-label="github"
-                  icon={faGithubAlt}
-                  size="lg"
-                />
-              </a>
-            )}
+        {
+          <div className="projetos__item--content">
+            {content}
+            <div className="projetos__item--icons">
+              {site && (
+                <a
+                  onMouseEnter={cursorHoverBig}
+                  onMouseLeave={cursorHoverSmall}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href={site}
+                >
+                  <FontAwesomeIcon
+                    aria-label="website"
+                    icon={faExternalLinkAlt}
+                  />
+                </a>
+              )}
+              {github && (
+                <a
+                  onMouseEnter={cursorHoverBig}
+                  onMouseLeave={cursorHoverSmall}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href={github}
+                >
+                  <FontAwesomeIcon
+                    aria-label="github"
+                    icon={faGithubAlt}
+                    size="lg"
+                  />
+                </a>
+              )}
+            </div>
           </div>
-        </div>
+        }
         <h4>{techUsed.toLowerCase()}</h4>
       </div>
     </div>

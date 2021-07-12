@@ -90,3 +90,8 @@ a {
         font-size: #{"clamp(1.7rem,1.7vw,2rem)"};
     }
 }
+@media screen and (min-width: 2000px) {
+    :root {
+        font-size: 1.5rem;
+    }
+}

@@ -13,7 +13,7 @@ function OQueFaco() {
       <h2 data-aos="fade-right">O Que Faço</h2>
       <div className="oQueFaco__items">{OQueFacoComponents}</div>
       <aside className="oQueFaco__bg">
-        <img data-aos="fade-left" src={BigGear} alt="" />
+        <img data-aos="fade" src={BigGear} alt="" />
       </aside>
     </section>
   )

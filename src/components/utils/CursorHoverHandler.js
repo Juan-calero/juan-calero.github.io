@@ -1,22 +1,21 @@
 function cursorHoverBig() {
-  const cursor = document.querySelector(".cursor--ring")
-  const cursorCenter = document.querySelector(".cursor--center")
-  cursor.style.height = "5rem"
-  cursor.style.width = "5rem"
-  cursor.style.border = "3px dotted white"
-  cursor.style.animationDuration = "6s"
-  cursorCenter.style.display = "none"
+  const { style } = document.querySelector(".cursor--ring")
+  const center = document.querySelector(".cursor--center").style
+  style.height = "5rem"
+  style.width = "5rem"
+  style.border = "3px dotted white"
+  style.animationDuration = "6s"
+  center.display = "none"
 }
 
 function cursorHoverSmall() {
-  const cursor = document.querySelector(".cursor--ring")
-  const cursorCenter = document.querySelector(".cursor--center")
-
-  cursor.style.height = "3rem"
-  cursor.style.width = "3rem"
-  cursor.style.border = "1px dashed white"
-  cursor.style.animationDuration = "10s"
-  cursorCenter.style.display = "block"
+  const { style } = document.querySelector(".cursor--ring")
+  const center = document.querySelector(".cursor--center").style
+  style.height = "3rem"
+  style.width = "3rem"
+  style.border = "1px dashed white"
+  style.animationDuration = "10s"
+  center.display = "block"
 }
 
 export { cursorHoverBig, cursorHoverSmall }

@@ -10,12 +10,9 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import Cursor from "./components/utils/Cursor"
 import React from "react"
-import useViewPort from "./components/utils/useViewPort"
 
 function App() {
   AOS.init({ duration: 1000, offset: 200 })
-  const { width } = useViewPort()
-
   function handleMouse(e) {
     const { style } = document.querySelector(".cursor--center")
     style.left = `${e.pageX}px`
@@ -30,14 +27,10 @@ function App() {
   return (
     <div
       onMouseMove={(e) => {
-        width > 1200 && handleMouse(e)
+        handleMouse(e)
       }}
     >
-      {width > 1200 && (
-        <React.Fragment>
-          <Cursor />
-        </React.Fragment>
-      )}
+      <Cursor />
       <Fixed />
       <Fold />
       <Sobre />
