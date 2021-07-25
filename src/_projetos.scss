@@ -84,9 +84,6 @@
             &--img {
                 margin-right: 1rem;
             }
-            & img {
-                border-radius: 15px;
-            }
             &:nth-child(even) {
                 & h4 {
                     width: 30ch;
@@ -95,6 +92,7 @@
                     &--text {
                         order: -1;
                         margin: 0 -10% 0 0%;
+                        z-index: 1;
                     }
                     &--content {
                         border-radius: 0 15px 0 0;

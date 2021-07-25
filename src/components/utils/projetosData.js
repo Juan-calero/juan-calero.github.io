@@ -1,8 +1,8 @@
+import React from "react"
 import PrintMusicaEmSi from "../../img/musicaemsiprint.webp"
 import PrintWashome from "../../img/washome screenshot.webp"
-import PrintPortfolio from "../../img/Portfolioprint.jpg"
 import PrintTerArtes from "../../img/TerArtesPrint.jpg"
-import React from "react"
+import PrintWeather from "../../img/WeatherPrint.jpg"
 
 const projetosData = [
   {
@@ -33,7 +33,7 @@ const projetosData = [
         Inclui página de Detalhes, Formulário e Testemunhos em Carousel.
       </p>
     ),
-    techUsed: "HTML, SaSS, JaVaSCRIPT",
+    techUsed: "REACT.JS, SaSS, JaVaSCRIPT",
     github: "https://github.com/Juan-calero/Washome",
     site: "http://www.washome.pt/",
   },
@@ -53,8 +53,8 @@ const projetosData = [
     site: "https://www.musicaemsi.com/",
   },
   {
-    img: PrintPortfolio,
-    title: "My Meteo",
+    img: PrintWeather,
+    title: "Weather App",
     content: (
       <p>
         Aplicação Web que tira partido do API do Instituto Português do Mar e da
@@ -64,7 +64,7 @@ const projetosData = [
         Previsão Meteorológica a 5 dias, com pesquisa por distrito e sugestões.
       </p>
     ),
-    techUsed: "React Hooks, context api, sass",
+    techUsed: "REACT.JS, React Hooks, context api, sass",
     github: "https://github.com/Juan-calero/my-Weather",
   },
 ]

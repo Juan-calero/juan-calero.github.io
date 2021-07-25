@@ -1,12 +1,6 @@
 import Washome from "../../icons/washomeLogoWhite.png"
 import MusicaEmSi from "../../icons/Musica em sí logo faces.png"
-
-/* export const matrixArr = [
-  ["APASV", "BQCXRT", "CVARG", "DPOI", "EOXUTR"],
-  ["EOXUTR", "FCMTI", "GUX7", "HAXWER", "BQCXRT"],
-  ["I3CU", "JZUVQN", "KVM7N", "LZ4B", "NPAU8X"],
-  ["MIXUA", "NPAU8X", "OLZQI", "P7X9", "JZUVQN"],
-] */
+import TerArtes from "../../icons/TerArtesLogo.webp"
 
 export const sectionsArr = [
   "início",
@@ -29,7 +23,7 @@ export const empresas = [
     name: "Música em Si",
   },
   {
-    src: MusicaEmSi,
+    src: TerArtes,
     name: "TerArtes",
   },
 ]
